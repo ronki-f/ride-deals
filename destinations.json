@@ -1,0 +1,1259 @@
+{
+ "airports": {
+  "AGP": "Malaga",
+  "AHO": "Alghero",
+  "ALC": "Alicante",
+  "ATH": "Athens",
+  "BCN": "Barcelona",
+  "BGY": "Milan Bergamo",
+  "BSL": "Basel-Mulhouse",
+  "BTS": "Bratislava",
+  "BZO": "Bolzano",
+  "CAG": "Cagliari",
+  "CHQ": "Chania (Crete)",
+  "CMF": "Chambery",
+  "CTA": "Catania",
+  "DTM": "Dortmund",
+  "DUS": "Dusseldorf",
+  "FNC": "Madeira",
+  "FRA": "Frankfurt",
+  "GNB": "Grenoble",
+  "GOA": "Genoa",
+  "GRO": "Girona",
+  "GRZ": "Graz",
+  "GVA": "Geneva",
+  "HER": "Heraklion (Crete)",
+  "INN": "Innsbruck",
+  "KLU": "Klagenfurt",
+  "KRK": "Krakow",
+  "KSC": "Kosice",
+  "KTW": "Katowice",
+  "LCA": "Larnaca",
+  "LJU": "Ljubljana",
+  "LPA": "Gran Canaria",
+  "LYS": "Lyon",
+  "MUC": "Munich",
+  "MXP": "Milan Malpensa",
+  "NCE": "Nice",
+  "OLB": "Olbia",
+  "OTP": "Bucharest",
+  "PAD": "Poprad-Tatry",
+  "PFO": "Paphos",
+  "PMO": "Palermo",
+  "PRG": "Prague",
+  "SOF": "Sofia",
+  "SPC": "La Palma",
+  "SZG": "Salzburg",
+  "TFN": "Tenerife North",
+  "TFS": "Tenerife South",
+  "TLS": "Toulouse",
+  "TRN": "Turin",
+  "TSF": "Treviso",
+  "VCE": "Venice",
+  "VIE": "Vienna",
+  "VRN": "Verona",
+  "ZAG": "Zagreb",
+  "ZRH": "Zurich"
+ },
+ "destinations": [
+  {
+   "name": "Morzine - Les Gets (Portes du Soleil)",
+   "country": "France",
+   "type": "lift",
+   "airports": [
+    "GVA"
+   ],
+   "transfer": "~1h15",
+   "window": "mid-Jun - early Sep",
+   "open_month": 6,
+   "close_month": 9,
+   "tier": "Start batch",
+   "notes": "Huge lift-linked area, Avoriaz and Swiss side included on one pass",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Chatel (Portes du Soleil)",
+   "country": "France",
+   "type": "lift",
+   "airports": [
+    "GVA"
+   ],
+   "transfer": "~1h45",
+   "window": "mid-Jun - early Sep",
+   "open_month": 6,
+   "close_month": 9,
+   "tier": "Phase 2",
+   "notes": "Same area as Morzine, quieter, links to Champery",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Flaine - Les Carroz (Grand Massif)",
+   "country": "France",
+   "type": "lift",
+   "airports": [
+    "GVA"
+   ],
+   "transfer": "~1h",
+   "window": "late Jun - early Sep",
+   "open_month": 6,
+   "close_month": 9,
+   "tier": "Phase 2",
+   "notes": "",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Chamonix - Les Houches",
+   "country": "France",
+   "type": "lift",
+   "airports": [
+    "GVA"
+   ],
+   "transfer": "~1h15",
+   "window": "mid-Jun - mid-Sep",
+   "open_month": 6,
+   "close_month": 9,
+   "tier": "Phase 2",
+   "notes": "Check which lifts take bikes",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Les 2 Alpes",
+   "country": "France",
+   "type": "lift",
+   "airports": [
+    "GNB",
+    "LYS"
+   ],
+   "transfer": "~1h45 (GNB), ~2h45 (LYS)",
+   "window": "late Jun - late Aug",
+   "open_month": 6,
+   "close_month": 8,
+   "tier": "Start batch",
+   "notes": "Glacier area, shorter season than Portes du Soleil",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Alpe d'Huez",
+   "country": "France",
+   "type": "lift",
+   "airports": [
+    "GNB",
+    "LYS"
+   ],
+   "transfer": "~1h45 (GNB), ~2h30 (LYS)",
+   "window": "late Jun - late Aug",
+   "open_month": 6,
+   "close_month": 8,
+   "tier": "Phase 2",
+   "notes": "",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "La Plagne",
+   "country": "France",
+   "type": "lift",
+   "airports": [
+    "CMF",
+    "GVA",
+    "LYS"
+   ],
+   "transfer": "~1h45 (CMF), ~2h45 (GVA)",
+   "window": "late Jun - late Aug",
+   "open_month": 6,
+   "close_month": 8,
+   "tier": "Phase 2",
+   "notes": "",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Les Arcs - Peisey-Vallandry",
+   "country": "France",
+   "type": "lift",
+   "airports": [
+    "CMF",
+    "GVA"
+   ],
+   "transfer": "~1h45 (CMF), ~2h45 (GVA)",
+   "window": "late Jun - late Aug",
+   "open_month": 6,
+   "close_month": 8,
+   "tier": "Phase 2",
+   "notes": "",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Serre Chevalier",
+   "country": "France",
+   "type": "lift",
+   "airports": [
+    "GNB",
+    "TRN"
+   ],
+   "transfer": "~2h-2h30",
+   "window": "late Jun - early Sep",
+   "open_month": 6,
+   "close_month": 9,
+   "tier": "Phase 3",
+   "notes": "Long transfers",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Isola 2000",
+   "country": "France",
+   "type": "lift",
+   "airports": [
+    "NCE"
+   ],
+   "transfer": "~1h30",
+   "window": "Jul - early Sep",
+   "open_month": 7,
+   "close_month": 9,
+   "tier": "Phase 3",
+   "notes": "",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Auron",
+   "country": "France",
+   "type": "lift",
+   "airports": [
+    "NCE"
+   ],
+   "transfer": "~1h30",
+   "window": "Jun - Sep",
+   "open_month": 6,
+   "close_month": 9,
+   "tier": "Phase 3",
+   "notes": "",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Metabief (Jura)",
+   "country": "France",
+   "type": "lift",
+   "airports": [
+    "GVA",
+    "BSL"
+   ],
+   "transfer": "~1h45",
+   "window": "Apr - Oct",
+   "open_month": 4,
+   "close_month": 10,
+   "tier": "Phase 3",
+   "notes": "Lower altitude, longer season, shorter runs",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Leogang - Saalbach-Hinterglemm",
+   "country": "Austria",
+   "type": "lift",
+   "airports": [
+    "SZG",
+    "MUC"
+   ],
+   "transfer": "~1h (SZG), ~2h (MUC)",
+   "window": "May - Oct",
+   "open_month": 5,
+   "close_month": 10,
+   "tier": "Start batch",
+   "notes": "Top-tier park, Leogang and Saalbach on one area",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Schladming (Planai)",
+   "country": "Austria",
+   "type": "lift",
+   "airports": [
+    "SZG"
+   ],
+   "transfer": "~1h15-1h30",
+   "window": "mid-May - mid-Oct",
+   "open_month": 5,
+   "close_month": 10,
+   "tier": "Start batch",
+   "notes": "",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Innsbruck area (Mutters, Nordkette)",
+   "country": "Austria",
+   "type": "lift",
+   "airports": [
+    "INN"
+   ],
+   "transfer": "~20-40 min",
+   "window": "Jun - Oct",
+   "open_month": 6,
+   "close_month": 10,
+   "tier": "Start batch",
+   "notes": "Airport next to the parks, check which lifts are open",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Kitzbuhel",
+   "country": "Austria",
+   "type": "lift",
+   "airports": [
+    "INN",
+    "SZG"
+   ],
+   "transfer": "~1h-1h15",
+   "window": "late May - Oct",
+   "open_month": 5,
+   "close_month": 10,
+   "tier": "Phase 2",
+   "notes": "",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Semmering (Hirschenkogel)",
+   "country": "Austria",
+   "type": "lift",
+   "airports": [
+    "VIE"
+   ],
+   "transfer": "~1h30",
+   "window": "May - Oct",
+   "open_month": 5,
+   "close_month": 10,
+   "tier": "Phase 2",
+   "notes": "",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Serfaus-Fiss-Ladis",
+   "country": "Austria",
+   "type": "lift",
+   "airports": [
+    "INN"
+   ],
+   "transfer": "~1h15-1h30",
+   "window": "Jun - Sep",
+   "open_month": 6,
+   "close_month": 9,
+   "tier": "Phase 2",
+   "notes": "",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Mayrhofen (Zillertal)",
+   "country": "Austria",
+   "type": "lift",
+   "airports": [
+    "INN"
+   ],
+   "transfer": "~1h",
+   "window": "Jun - Sep",
+   "open_month": 6,
+   "close_month": 9,
+   "tier": "Phase 2",
+   "notes": "",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Solden",
+   "country": "Austria",
+   "type": "lift",
+   "airports": [
+    "INN"
+   ],
+   "transfer": "~1h15",
+   "window": "Jun - Sep",
+   "open_month": 6,
+   "close_month": 9,
+   "tier": "Phase 2",
+   "notes": "",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Zell am See - Kaprun",
+   "country": "Austria",
+   "type": "lift",
+   "airports": [
+    "SZG"
+   ],
+   "transfer": "~1h",
+   "window": "Jun - Oct",
+   "open_month": 6,
+   "close_month": 10,
+   "tier": "Phase 2",
+   "notes": "",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Bad Kleinkirchheim",
+   "country": "Austria",
+   "type": "lift",
+   "airports": [
+    "KLU",
+    "SZG"
+   ],
+   "transfer": "~1h (KLU), ~2h (SZG)",
+   "window": "Jun - Sep",
+   "open_month": 6,
+   "close_month": 9,
+   "tier": "Phase 3",
+   "notes": "",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Pila (Aosta)",
+   "country": "Italy",
+   "type": "lift",
+   "airports": [
+    "TRN",
+    "MXP",
+    "GVA"
+   ],
+   "transfer": "~1h30-1h45 (TRN)",
+   "window": "mid-Jun - early Sep",
+   "open_month": 6,
+   "close_month": 9,
+   "tier": "Start batch",
+   "notes": "Your list",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "La Thuile",
+   "country": "Italy",
+   "type": "lift",
+   "airports": [
+    "TRN",
+    "GVA",
+    "MXP"
+   ],
+   "transfer": "~2h (TRN)",
+   "window": "mid-Jun - early Sep",
+   "open_month": 6,
+   "close_month": 9,
+   "tier": "Start batch",
+   "notes": "Your list",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Val di Sole (Daolasa)",
+   "country": "Italy",
+   "type": "lift",
+   "airports": [
+    "VRN",
+    "BGY"
+   ],
+   "transfer": "~2h30",
+   "window": "Jun - mid-Sep",
+   "open_month": 6,
+   "close_month": 9,
+   "tier": "Start batch",
+   "notes": "Your list, regular World Cup venue",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Livigno",
+   "country": "Italy",
+   "type": "lift",
+   "airports": [
+    "BGY",
+    "MXP"
+   ],
+   "transfer": "~3h (long transfer)",
+   "window": "mid-Jun - mid-Sep",
+   "open_month": 6,
+   "close_month": 9,
+   "tier": "Start batch",
+   "notes": "Long transfer",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Bormio",
+   "country": "Italy",
+   "type": "lift",
+   "airports": [
+    "BGY",
+    "MXP"
+   ],
+   "transfer": "~2h30",
+   "window": "Jun - Sep",
+   "open_month": 6,
+   "close_month": 9,
+   "tier": "Phase 2",
+   "notes": "Verify bike park status each year",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Val Gardena - Alpe di Siusi",
+   "country": "Italy",
+   "type": "lift",
+   "airports": [
+    "VRN",
+    "INN",
+    "BZO"
+   ],
+   "transfer": "~2h-2h30",
+   "window": "mid-Jun - mid-Sep",
+   "open_month": 6,
+   "close_month": 9,
+   "tier": "Start batch",
+   "notes": "",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Kronplatz (Plan de Corones)",
+   "country": "Italy",
+   "type": "lift",
+   "airports": [
+    "INN",
+    "VCE",
+    "VRN"
+   ],
+   "transfer": "~2h15 (INN)",
+   "window": "late May - early Oct",
+   "open_month": 5,
+   "close_month": 10,
+   "tier": "Start batch",
+   "notes": "",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Alta Badia",
+   "country": "Italy",
+   "type": "lift",
+   "airports": [
+    "INN",
+    "VCE",
+    "VRN"
+   ],
+   "transfer": "~2h45",
+   "window": "Jun - Sep",
+   "open_month": 6,
+   "close_month": 9,
+   "tier": "Phase 2",
+   "notes": "Long transfer",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Cortina d'Ampezzo",
+   "country": "Italy",
+   "type": "lift",
+   "airports": [
+    "VCE",
+    "TSF"
+   ],
+   "transfer": "~2h",
+   "window": "Jun - mid-Sep",
+   "open_month": 6,
+   "close_month": 9,
+   "tier": "Phase 3",
+   "notes": "",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Madonna di Campiglio",
+   "country": "Italy",
+   "type": "lift",
+   "airports": [
+    "VRN",
+    "BGY"
+   ],
+   "transfer": "~2h30",
+   "window": "Jun - Sep",
+   "open_month": 6,
+   "close_month": 9,
+   "tier": "Phase 3",
+   "notes": "",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Monte Bondone (Trento)",
+   "country": "Italy",
+   "type": "lift",
+   "airports": [
+    "VRN"
+   ],
+   "transfer": "~1h30",
+   "window": "Jun - Sep",
+   "open_month": 6,
+   "close_month": 9,
+   "tier": "Phase 2",
+   "notes": "Verify opening days",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Folgaria - Alpe Cimbra",
+   "country": "Italy",
+   "type": "lift",
+   "airports": [
+    "VRN"
+   ],
+   "transfer": "~2h",
+   "window": "Jun - Sep",
+   "open_month": 6,
+   "close_month": 9,
+   "tier": "Phase 3",
+   "notes": "",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Bardonecchia",
+   "country": "Italy",
+   "type": "lift",
+   "airports": [
+    "TRN"
+   ],
+   "transfer": "~1h30",
+   "window": "Jun - Sep",
+   "open_month": 6,
+   "close_month": 9,
+   "tier": "Phase 3",
+   "notes": "",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Garda Trentino (Riva - Torbole)",
+   "country": "Italy",
+   "type": "trail",
+   "airports": [
+    "VRN",
+    "BGY"
+   ],
+   "transfer": "~1h15 (VRN)",
+   "window": "Mar - Nov",
+   "open_month": 3,
+   "close_month": 11,
+   "tier": "Phase 2",
+   "notes": "Shuttle-based trails, great spring and autumn",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Finale Ligure",
+   "country": "Italy",
+   "type": "trail",
+   "airports": [
+    "GOA",
+    "NCE",
+    "MXP",
+    "TRN"
+   ],
+   "transfer": "~1h15 (GOA)",
+   "window": "Year-round (best Mar-Jun, Sep-Dec)",
+   "open_month": 1,
+   "close_month": 12,
+   "tier": "Start batch",
+   "notes": "The enduro classic, shuttles run most of the year",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Sardinia (candidate)",
+   "country": "Italy",
+   "type": "trail",
+   "airports": [
+    "CAG",
+    "OLB",
+    "AHO"
+   ],
+   "transfer": "varies",
+   "window": "Year-round (best Oct-May)",
+   "open_month": 1,
+   "close_month": 12,
+   "tier": "Phase 3",
+   "notes": "Needs local operator check",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Sicily (candidate)",
+   "country": "Italy",
+   "type": "trail",
+   "airports": [
+    "CTA",
+    "PMO"
+   ],
+   "transfer": "varies",
+   "window": "Year-round (best Oct-May)",
+   "open_month": 1,
+   "close_month": 12,
+   "tier": "Phase 3",
+   "notes": "Needs local operator check",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Verbier",
+   "country": "Switzerland",
+   "type": "lift",
+   "airports": [
+    "GVA"
+   ],
+   "transfer": "~2h30",
+   "window": "mid-Jun - mid-Sep",
+   "open_month": 6,
+   "close_month": 9,
+   "tier": "Start batch",
+   "notes": "Expensive, top-tier riding",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Champery (Portes du Soleil)",
+   "country": "Switzerland",
+   "type": "lift",
+   "airports": [
+    "GVA"
+   ],
+   "transfer": "~1h15",
+   "window": "mid-Jun - mid-Sep",
+   "open_month": 6,
+   "close_month": 9,
+   "tier": "Start batch",
+   "notes": "Swiss side of Portes du Soleil",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Villars - Les Diablerets - Gryon",
+   "country": "Switzerland",
+   "type": "lift",
+   "airports": [
+    "GVA"
+   ],
+   "transfer": "~1h30",
+   "window": "Jun - Oct",
+   "open_month": 6,
+   "close_month": 10,
+   "tier": "Phase 2",
+   "notes": "",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Crans-Montana",
+   "country": "Switzerland",
+   "type": "lift",
+   "airports": [
+    "GVA"
+   ],
+   "transfer": "~2h15",
+   "window": "Jun - Oct",
+   "open_month": 6,
+   "close_month": 10,
+   "tier": "Phase 3",
+   "notes": "",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Bellwald",
+   "country": "Switzerland",
+   "type": "lift",
+   "airports": [
+    "GVA",
+    "ZRH"
+   ],
+   "transfer": "~2h30-3h",
+   "window": "Jun - Oct",
+   "open_month": 6,
+   "close_month": 10,
+   "tier": "Phase 3",
+   "notes": "Long transfer",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Flims - Laax",
+   "country": "Switzerland",
+   "type": "lift",
+   "airports": [
+    "ZRH"
+   ],
+   "transfer": "~1h45",
+   "window": "Jun - Oct",
+   "open_month": 6,
+   "close_month": 10,
+   "tier": "Phase 2",
+   "notes": "",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Lenzerheide",
+   "country": "Switzerland",
+   "type": "lift",
+   "airports": [
+    "ZRH"
+   ],
+   "transfer": "~2h",
+   "window": "Jun - Oct",
+   "open_month": 6,
+   "close_month": 10,
+   "tier": "Start batch",
+   "notes": "World Cup venue",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Davos - Klosters",
+   "country": "Switzerland",
+   "type": "lift",
+   "airports": [
+    "ZRH"
+   ],
+   "transfer": "~1h45-2h",
+   "window": "Jun - Oct",
+   "open_month": 6,
+   "close_month": 10,
+   "tier": "Phase 3",
+   "notes": "",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Arosa",
+   "country": "Switzerland",
+   "type": "lift",
+   "airports": [
+    "ZRH"
+   ],
+   "transfer": "~2h",
+   "window": "Jun - Oct",
+   "open_month": 6,
+   "close_month": 10,
+   "tier": "Phase 3",
+   "notes": "",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Engelberg",
+   "country": "Switzerland",
+   "type": "lift",
+   "airports": [
+    "ZRH"
+   ],
+   "transfer": "~1h15",
+   "window": "Jun - Oct",
+   "open_month": 6,
+   "close_month": 10,
+   "tier": "Phase 3",
+   "notes": "",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Andermatt",
+   "country": "Switzerland",
+   "type": "lift",
+   "airports": [
+    "ZRH"
+   ],
+   "transfer": "~1h30-2h",
+   "window": "Jun - Oct",
+   "open_month": 6,
+   "close_month": 10,
+   "tier": "Phase 3",
+   "notes": "",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Maribor - Pohorje",
+   "country": "Slovenia",
+   "type": "lift",
+   "airports": [
+    "GRZ",
+    "LJU",
+    "ZAG"
+   ],
+   "transfer": "~1h (GRZ), ~1h30 (LJU)",
+   "window": "Apr - Oct",
+   "open_month": 4,
+   "close_month": 10,
+   "tier": "Start batch",
+   "notes": "Your list, long season",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Krvavec",
+   "country": "Slovenia",
+   "type": "lift",
+   "airports": [
+    "LJU"
+   ],
+   "transfer": "~40 min",
+   "window": "Jun - Sep",
+   "open_month": 6,
+   "close_month": 9,
+   "tier": "Phase 2",
+   "notes": "",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Kranjska Gora",
+   "country": "Slovenia",
+   "type": "lift",
+   "airports": [
+    "LJU"
+   ],
+   "transfer": "~1h",
+   "window": "Jun - Sep",
+   "open_month": 6,
+   "close_month": 9,
+   "tier": "Phase 3",
+   "notes": "",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Kalnica Bike Park",
+   "country": "Slovakia",
+   "type": "lift",
+   "airports": [
+    "BTS",
+    "VIE"
+   ],
+   "transfer": "verify (~1h45-2h)",
+   "window": "Apr - Oct",
+   "open_month": 4,
+   "close_month": 10,
+   "tier": "Start batch",
+   "notes": "Your list, check transfer from airport",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Jasna",
+   "country": "Slovakia",
+   "type": "lift",
+   "airports": [
+    "PAD",
+    "KRK",
+    "KSC"
+   ],
+   "transfer": "~1h (PAD)",
+   "window": "Jun - Sep",
+   "open_month": 6,
+   "close_month": 9,
+   "tier": "Phase 2",
+   "notes": "",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Szczyrk",
+   "country": "Poland",
+   "type": "lift",
+   "airports": [
+    "KTW",
+    "KRK"
+   ],
+   "transfer": "~1h-1h15 (KTW)",
+   "window": "May - Oct",
+   "open_month": 5,
+   "close_month": 10,
+   "tier": "Start batch",
+   "notes": "Your list",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Spindleruv Mlyn",
+   "country": "Czechia",
+   "type": "lift",
+   "airports": [
+    "PRG"
+   ],
+   "transfer": "~2h",
+   "window": "May - Oct",
+   "open_month": 5,
+   "close_month": 10,
+   "tier": "Phase 2",
+   "notes": "",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Bansko",
+   "country": "Bulgaria",
+   "type": "lift",
+   "airports": [
+    "SOF"
+   ],
+   "transfer": "~2h-2h15",
+   "window": "Jun - Sep",
+   "open_month": 6,
+   "close_month": 9,
+   "tier": "Start batch",
+   "notes": "Often cheap flights",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Poiana Brasov",
+   "country": "Romania",
+   "type": "lift",
+   "airports": [
+    "OTP"
+   ],
+   "transfer": "~2h45",
+   "window": "Jun - Sep",
+   "open_month": 6,
+   "close_month": 9,
+   "tier": "Phase 3",
+   "notes": "",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Winterberg",
+   "country": "Germany",
+   "type": "lift",
+   "airports": [
+    "DUS",
+    "DTM",
+    "FRA"
+   ],
+   "transfer": "~2h (DTM/DUS)",
+   "window": "Apr - Oct",
+   "open_month": 4,
+   "close_month": 10,
+   "tier": "Start batch",
+   "notes": "",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Willingen",
+   "country": "Germany",
+   "type": "lift",
+   "airports": [
+    "DTM",
+    "DUS"
+   ],
+   "transfer": "~2h",
+   "window": "Apr - Oct",
+   "open_month": 4,
+   "close_month": 10,
+   "tier": "Phase 3",
+   "notes": "",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Vallnord (Andorra)",
+   "country": "Andorra",
+   "type": "lift",
+   "airports": [
+    "BCN",
+    "TLS"
+   ],
+   "transfer": "~3h",
+   "window": "Jun - Sep",
+   "open_month": 6,
+   "close_month": 9,
+   "tier": "Phase 2",
+   "notes": "Long transfer",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Girona",
+   "country": "Spain",
+   "type": "trail",
+   "airports": [
+    "GRO",
+    "BCN"
+   ],
+   "transfer": "~1h (GRO), ~1h30 (BCN)",
+   "window": "Year-round",
+   "open_month": 1,
+   "close_month": 12,
+   "tier": "Start batch",
+   "notes": "Mild winters, shuttle and trail riding",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Malaga - Ronda",
+   "country": "Spain",
+   "type": "trail",
+   "airports": [
+    "AGP"
+   ],
+   "transfer": "~1h-1h30",
+   "window": "Year-round (best Oct-May)",
+   "open_month": 1,
+   "close_month": 12,
+   "tier": "Phase 2",
+   "notes": "",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Costa Blanca (Alicante)",
+   "country": "Spain",
+   "type": "trail",
+   "airports": [
+    "ALC"
+   ],
+   "transfer": "~1h",
+   "window": "Year-round (best Oct-May)",
+   "open_month": 1,
+   "close_month": 12,
+   "tier": "Phase 3",
+   "notes": "",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Tenerife",
+   "country": "Spain (Canaries)",
+   "type": "trail",
+   "airports": [
+    "TFS",
+    "TFN"
+   ],
+   "transfer": "~45 min-1h",
+   "window": "Year-round",
+   "open_month": 1,
+   "close_month": 12,
+   "tier": "Start batch",
+   "notes": "Warm all winter",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Gran Canaria",
+   "country": "Spain (Canaries)",
+   "type": "trail",
+   "airports": [
+    "LPA"
+   ],
+   "transfer": "~1h",
+   "window": "Year-round",
+   "open_month": 1,
+   "close_month": 12,
+   "tier": "Phase 3",
+   "notes": "",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "La Palma",
+   "country": "Spain (Canaries)",
+   "type": "trail",
+   "airports": [
+    "SPC"
+   ],
+   "transfer": "~45 min",
+   "window": "Year-round",
+   "open_month": 1,
+   "close_month": 12,
+   "tier": "Phase 3",
+   "notes": "",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Madeira",
+   "country": "Portugal",
+   "type": "trail",
+   "airports": [
+    "FNC"
+   ],
+   "transfer": "~30-45 min",
+   "window": "Year-round",
+   "open_month": 1,
+   "close_month": 12,
+   "tier": "Start batch",
+   "notes": "Shuttle-based, best outside peak summer heat",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Athens (Parnitha, Penteli area)",
+   "country": "Greece",
+   "type": "trail",
+   "airports": [
+    "ATH"
+   ],
+   "transfer": "~30-60 min",
+   "window": "Year-round (best Oct-Jun, hot in summer)",
+   "open_month": 1,
+   "close_month": 12,
+   "tier": "Phase 2",
+   "notes": "Shuttle and trail riding, check local operators",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Crete",
+   "country": "Greece",
+   "type": "trail",
+   "airports": [
+    "HER",
+    "CHQ"
+   ],
+   "transfer": "~1h",
+   "window": "Year-round (best Oct-May)",
+   "open_month": 1,
+   "close_month": 12,
+   "tier": "Phase 3",
+   "notes": "Needs local operator check",
+   "open_date": "",
+   "close_date": ""
+  },
+  {
+   "name": "Cyprus (Troodos)",
+   "country": "Cyprus",
+   "type": "trail",
+   "airports": [
+    "LCA",
+    "PFO"
+   ],
+   "transfer": "~1h30-2h",
+   "window": "Year-round (best Oct-May)",
+   "open_month": 1,
+   "close_month": 12,
+   "tier": "Phase 3",
+   "notes": "Needs local operator check",
+   "open_date": "",
+   "close_date": ""
+  }
+ ]
+}

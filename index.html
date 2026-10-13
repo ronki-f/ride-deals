@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ride Deals TLV</title>
+<style>
+:root{--bg:#f6f5f1;--card:#fff;--ink:#1d2430;--mute:#667085;--line:#e4e2da;--accent:#1f6f5c;--hot:#c2410c;--hotbg:#ffedd5;--good:#166534;--goodbg:#dcfce7;--soft:#eef2f0}
+@media(prefers-color-scheme:dark){:root{--bg:#14181d;--card:#1c2229;--ink:#e8ecf0;--mute:#9aa5b1;--line:#2b343d;--accent:#5fc4a8;--hot:#fdba74;--hotbg:#4a2a12;--good:#86efac;--goodbg:#14341f;--soft:#232b33}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 -apple-system,system-ui,Segoe UI,Roboto,sans-serif}
+.wrap{max-width:880px;margin:0 auto;padding:20px 16px 60px}
+h1{font-size:24px;margin:0 0 4px}
+.sub{color:var(--mute);margin:0 0 14px}
+.note{background:var(--soft);border-radius:10px;padding:10px 12px;font-size:13px;color:var(--mute);margin-bottom:14px}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+select,input{font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
+input[type=number]{width:110px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:12px}
+.top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+.price{font-size:26px;font-weight:700;line-height:1}
+.price small{font-size:13px;font-weight:400;color:var(--mute)}
+.route{font-weight:600}
+.meta{color:var(--mute);font-size:13px;margin-top:2px}
+.badge{display:inline-block;border-radius:999px;padding:3px 10px;font-size:12px;font-weight:600;white-space:nowrap}
+.hot{background:var(--hotbg);color:var(--hot)}.good{background:var(--goodbg);color:var(--good)}.flat{background:var(--soft);color:var(--mute)}
+.dests{margin:10px 0 0;padding:10px 0 0;border-top:1px solid var(--line);display:grid;gap:6px}
+.d b{font-weight:600}.d span{color:var(--mute);font-size:13px}
+.tag{font-size:11px;border:1px solid var(--line);border-radius:6px;padding:1px 6px;margin-left:6px;color:var(--mute)}
+a.book{display:inline-block;margin-top:12px;background:var(--accent);color:#fff;text-decoration:none;border-radius:8px;padding:8px 14px;font-weight:600;font-size:14px}
+.empty{text-align:center;color:var(--mute);padding:40px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Ride Deals from TLV</h1>
+  <p class="sub">Direct flights only, to places that are open for riding on your dates.</p>
+  <div class="note" id="note">Loading...</div>
+  <div class="filters">
+    <select id="month"><option value="">Any month</option></select>
+    <select id="type"><option value="">All riding types</option><option value="lift">Lift-served bike parks</option><option value="trail">Shuttle / trail riding</option></select>
+    <select id="sort"><option value="deal">Best deal first</option><option value="price">Lowest price</option><option value="date">Soonest</option></select>
+    <input id="max" type="number" inputmode="numeric" placeholder="Max $">
+    <input id="q" type="search" placeholder="Search place">
+  </div>
+  <div id="list"></div>
+</div>
+<script>
+const $=id=>document.getElementById(id);
+let DATA=null;
+function sources(){
+  const u=[];
+  const m=location.hostname.match(/^(.+)\.github\.io$/), p=location.pathname.split("/")[1];
+  if(m&&p) u.push(`https://raw.githubusercontent.com/${m[1]}/${p}/main/data/deals.json`);
+  u.push("data/deals.json");
+  return u;
+}
+async function load(){
+  for(const u of sources()){
+    try{const r=await fetch(u+"?t="+Date.now());if(r.ok){DATA=await r.json();return}}catch(e){}
+  }
+  throw new Error("no data");
+}
+const fmtDate=d=>new Date(d+"T12:00:00").toLocaleDateString("en-GB",{day:"numeric",month:"short"});
+const monthName=m=>new Date(m+"-15").toLocaleDateString("en-GB",{month:"long",year:"numeric"});
+function badge(o){
+  if(o.discount==null)return"";
+  const pct=Math.round(o.discount*100);
+  if(pct>=30)return`<span class="badge hot">${pct}% below usual</span>`;
+  if(pct>=15)return`<span class="badge good">${pct}% below usual</span>`;
+  return`<span class="badge flat">${pct>0?pct+"% below":"around"} usual</span>`;
+}
+function render(){
+  const mo=$("month").value,ty=$("type").value,mx=+$("max").value||0,q=$("q").value.trim().toLowerCase(),so=$("sort").value;
+  let L=DATA.offers.filter(o=>
+    (!mo||o.depart.startsWith(mo))&&(!mx||o.price<=mx)&&
+    o.destinations.some(d=>(!ty||d.type===ty)&&(!q||(d.name+d.country).toLowerCase().includes(q))));
+  L=L.slice().sort((a,b)=>so==="price"?a.price-b.price:so==="date"?a.depart.localeCompare(b.depart):((b.discount??-1)-(a.discount??-1))||a.price-b.price);
+  if(!L.length){$("list").innerHTML='<div class="empty">No matching deals right now.</div>';return}
+  $("list").innerHTML=L.slice(0,60).map(o=>{
+    const ds=o.destinations.filter(d=>(!ty||d.type===ty)&&(!q||(d.name+d.country).toLowerCase().includes(q)));
+    return`<div class="card"><div class="top"><div>
+      <div class="price">$${Math.round(o.price)} <small>round trip</small></div>
+      <div class="route">TLV → ${o.airport_name} (${o.airport})</div>
+      <div class="meta">${fmtDate(o.depart)} – ${fmtDate(o.return)} · ${o.airline||""} · direct${o.baseline?` · usual about $${o.baseline}`:""}</div></div>
+      ${badge(o)}</div>
+      <div class="dests">${ds.map(d=>`<div class="d"><b>${d.name}</b><span class="tag">${d.type==="lift"?"lift park":"trail / shuttle"}</span><br><span>${d.country} · transfer ${d.transfer}${d.notes?" · "+d.notes:""}</span></div>`).join("")}</div>
+      <a class="book" href="${o.link}" target="_blank" rel="noopener">View flight</a></div>`}).join("");
+}
+function setup(){
+  const ms=[...new Set(DATA.offers.map(o=>o.depart.slice(0,7)))].sort();
+  $("month").innerHTML='<option value="">Any month</option>'+ms.map(m=>`<option value="${m}">${monthName(m)}</option>`).join("");
+  const upd=new Date(DATA.generated).toLocaleDateString("en-GB",{day:"numeric",month:"short"});
+  const early=DATA.history_days<DATA.min_history_days;
+  $("note").textContent=`Updated ${upd}. Prices in ${DATA.currency}, cached fares, so confirm the price when you open the flight. `+
+    (early?`Price history is ${DATA.history_days} day${DATA.history_days>1?"s":""} old, so "below usual" is compared against other dates in the same month for now. It becomes more accurate after ${DATA.min_history_days} days.`:`"Below usual" compares with this route's own price history (${DATA.history_days} days).`);
+  ["month","type","sort","max","q"].forEach(i=>$(i).addEventListener("input",render));
+  render();
+}
+load().then(setup).catch(()=>{$("note").textContent="No price data yet. Run the collector from the Actions tab.";$("list").innerHTML=""});
+</script>
+</body>
+</html>

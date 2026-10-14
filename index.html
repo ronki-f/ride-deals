@@ -28,6 +28,11 @@ input[type=number]{width:110px}
 .d b{font-weight:600}.d span{color:var(--mute);font-size:13px}
 .tag{font-size:11px;border:1px solid var(--line);border-radius:6px;padding:1px 6px;margin-left:6px;color:var(--mute)}
 a.book{display:inline-block;margin-top:12px;background:var(--accent);color:#fff;text-decoration:none;border-radius:8px;padding:8px 14px;font-weight:600;font-size:14px}
+.bike{margin-top:10px;background:var(--soft);border-radius:10px;padding:10px 12px;font-size:13px}
+.bike b{font-weight:600}.bike .how{color:var(--mute);margin-top:4px}
+.conf{font-size:11px;border-radius:6px;padding:1px 6px;margin-left:6px;font-weight:600}
+.c-official{background:var(--goodbg);color:var(--good)}.c-article{background:#fef9c3;color:#854d0e}.c-unverified{background:var(--hotbg);color:var(--hot)}
+@media(prefers-color-scheme:dark){.c-article{background:#3b3410;color:#fde68a}}
 .empty{text-align:center;color:var(--mute);padding:40px 0}
 </style>
 </head>
@@ -39,7 +44,8 @@ a.book{display:inline-block;margin-top:12px;background:var(--accent);color:#fff;
   <div class="filters">
     <select id="month"><option value="">Any month</option></select>
     <select id="type"><option value="">All riding types</option><option value="lift">Lift-served bike parks</option><option value="trail">Shuttle / trail riding</option></select>
-    <select id="sort"><option value="deal">Best deal first</option><option value="price">Lowest price</option><option value="date">Soonest</option></select>
+    <select id="sort"><option value="deal">Best deal first</option><option value="price">Lowest price</option><option value="total">Lowest total with bike (est.)</option><option value="date">Soonest</option></select>
+    <select id="known"><option value="">All airlines</option><option value="1">Bike fee known only</option></select>
     <input id="max" type="number" inputmode="numeric" placeholder="Max $">
     <input id="q" type="search" placeholder="Search place">
   </div>
@@ -47,7 +53,7 @@ a.book{display:inline-block;margin-top:12px;background:var(--accent);color:#fff;
 </div>
 <script>
 const $=id=>document.getElementById(id);
-let DATA=null;
+let DATA=null,AL={airlines:{},eur_usd:1.15};
 function sources(){
   const u=[];
   const m=location.hostname.match(/^(.+)\.github\.io$/), p=location.pathname.split("/")[1];
@@ -70,34 +76,57 @@ function badge(o){
   if(pct>=15)return`<span class="badge good">${pct}% below usual</span>`;
   return`<span class="badge flat">${pct>0?pct+"% below":"around"} usual</span>`;
 }
+const CONF={official:"Checked on airline site",article:"From an article, confirm",unverified:"Not verified"};
+function bikeInfo(o){
+  const p=AL.airlines[o.airline]||{name:o.airline||"Unknown airline",url:"",confidence:"unverified",how:"Not verified yet. Check the airline's baggage rules before booking."};
+  let lo=null,hi=null;
+  if(p.fee_min!=null){
+    const r=AL.eur_usd||1.15;
+    lo=Math.round(o.price+2*p.fee_min*r);hi=Math.round(o.price+2*p.fee_max*r);
+  }
+  return {p,lo,hi,mid:lo==null?null:(lo+hi)/2};
+}
+const money=(a,b)=>a===b?`$${a}`:`$${a}–$${b}`;
 function render(){
-  const mo=$("month").value,ty=$("type").value,mx=+$("max").value||0,q=$("q").value.trim().toLowerCase(),so=$("sort").value;
-  let L=DATA.offers.filter(o=>
-    (!mo||o.depart.startsWith(mo))&&(!mx||o.price<=mx)&&
+  const mo=$("month").value,ty=$("type").value,mx=+$("max").value||0,q=$("q").value.trim().toLowerCase(),so=$("sort").value,kn=$("known").value;
+  let L=DATA.offers.map(o=>({o,b:bikeInfo(o)})).filter(({o,b})=>
+    (!mo||o.depart.startsWith(mo))&&(!mx||o.price<=mx)&&(!kn||b.lo!=null)&&
     o.destinations.some(d=>(!ty||d.type===ty)&&(!q||(d.name+d.country).toLowerCase().includes(q))));
-  L=L.slice().sort((a,b)=>so==="price"?a.price-b.price:so==="date"?a.depart.localeCompare(b.depart):((b.discount??-1)-(a.discount??-1))||a.price-b.price);
+  L.sort((x,y)=>so==="price"?x.o.price-y.o.price:so==="date"?x.o.depart.localeCompare(y.o.depart):
+    so==="total"?((x.b.mid??1e9)-(y.b.mid??1e9)):((y.o.discount??-1)-(x.o.discount??-1))||x.o.price-y.o.price);
   if(!L.length){$("list").innerHTML='<div class="empty">No matching deals right now.</div>';return}
-  $("list").innerHTML=L.slice(0,60).map(o=>{
+  $("list").innerHTML=L.slice(0,60).map(({o,b})=>{
     const ds=o.destinations.filter(d=>(!ty||d.type===ty)&&(!q||(d.name+d.country).toLowerCase().includes(q)));
+    const p=b.p;
+    const bike=b.lo!=null
+      ?`<div class="bike"><b>Bike: about ${money(Math.round(p.fee_min*(AL.eur_usd||1.15)),Math.round(p.fee_max*(AL.eur_usd||1.15)))} each way</b><span class="conf c-${p.confidence}">${CONF[p.confidence]}</span><br>Estimated total with bike, round trip: <b>about ${money(b.lo,b.hi)}</b><div class="how">${p.how}${p.max_kg?` Max ${p.max_kg} kg.`:""}</div></div>`
+      :`<div class="bike"><b>Bike fee not verified</b><span class="conf c-unverified">${CONF.unverified}</span><div class="how">${p.how}</div></div>`;
     return`<div class="card"><div class="top"><div>
-      <div class="price">$${Math.round(o.price)} <small>round trip</small></div>
+      <div class="price">~$${Math.round(o.price)} <small>round trip, flight only</small></div>
       <div class="route">TLV → ${o.airport_name} (${o.airport})</div>
-      <div class="meta">${fmtDate(o.depart)} – ${fmtDate(o.return)} · ${o.airline||""} · direct${o.baseline?` · usual about $${o.baseline}`:""}</div></div>
+      <div class="meta">${fmtDate(o.depart)} – ${fmtDate(o.return)} · ${p.name} · direct</div></div>
       ${badge(o)}</div>
+      ${bike}
       <div class="dests">${ds.map(d=>`<div class="d"><b>${d.name}</b><span class="tag">${d.type==="lift"?"lift park":"trail / shuttle"}</span><br><span>${d.country} · transfer ${d.transfer}${d.notes?" · "+d.notes:""}</span></div>`).join("")}</div>
-      <a class="book" href="${o.link}" target="_blank" rel="noopener">View flight</a></div>`}).join("");
+      ${p.url?`<a class="book" href="${p.url}" target="_blank" rel="noopener">Check on ${p.name} website</a><div class="meta" style="margin-top:6px">Search TLV → ${o.airport} for ${fmtDate(o.depart)} – ${fmtDate(o.return)}. The price above is a cached estimate.</div>`:`<div class="meta" style="margin-top:10px">Find this airline's own website and search TLV → ${o.airport} for ${fmtDate(o.depart)} – ${fmtDate(o.return)}. The price above is a cached estimate.</div>`}
+    </div>`}).join("");
 }
 function setup(){
   const ms=[...new Set(DATA.offers.map(o=>o.depart.slice(0,7)))].sort();
   $("month").innerHTML='<option value="">Any month</option>'+ms.map(m=>`<option value="${m}">${monthName(m)}</option>`).join("");
   const upd=new Date(DATA.generated).toLocaleDateString("en-GB",{day:"numeric",month:"short"});
   const early=DATA.history_days<DATA.min_history_days;
-  $("note").textContent=`Updated ${upd}. Prices in ${DATA.currency}, cached fares, so confirm the price when you open the flight. `+
+  $("note").textContent=`Updated ${upd}. Prices in ${DATA.currency} are cached estimates. Always confirm the fare and add the bike on the airline's own website. `+
     (early?`Price history is ${DATA.history_days} day${DATA.history_days>1?"s":""} old, so "below usual" is compared against other dates in the same month for now. It becomes more accurate after ${DATA.min_history_days} days.`:`"Below usual" compares with this route's own price history (${DATA.history_days} days).`);
-  ["month","type","sort","max","q"].forEach(i=>$(i).addEventListener("input",render));
+  ["month","type","sort","known","max","q"].forEach(i=>$(i).addEventListener("input",render));
   render();
 }
-load().then(setup).catch(()=>{$("note").textContent="No price data yet. Run the collector from the Actions tab.";$("list").innerHTML=""});
+async function loadAL(){
+  for(const u of sources().map(x=>x.replace("deals.json","../airlines.json").replace("/data/../","/"))){
+    try{const r=await fetch(u+"?t="+Date.now());if(r.ok){AL=await r.json();return}}catch(e){}
+  }
+}
+Promise.all([load(),loadAL()]).then(setup).catch(()=>{$("note").textContent="No price data yet. Run the collector from the Actions tab.";$("list").innerHTML=""});
 </script>
 </body>
 </html>

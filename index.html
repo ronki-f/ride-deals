@@ -3,130 +3,229 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0f3a2f">
 <title>Ride Deals TLV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f6f5f1;--card:#fff;--ink:#1d2430;--mute:#667085;--line:#e4e2da;--accent:#1f6f5c;--hot:#c2410c;--hotbg:#ffedd5;--good:#166534;--goodbg:#dcfce7;--soft:#eef2f0}
-@media(prefers-color-scheme:dark){:root{--bg:#14181d;--card:#1c2229;--ink:#e8ecf0;--mute:#9aa5b1;--line:#2b343d;--accent:#5fc4a8;--hot:#fdba74;--hotbg:#4a2a12;--good:#86efac;--goodbg:#14341f;--soft:#232b33}}
+:root{
+  --bg:#e7edea;--card:#fff;--ink:#14201b;--mute:#566660;--line:#d5dedb;--soft:#f0f4f2;
+  --pine:#0f3a2f;--pine2:#165445;--onpine:#ffffff;--onpine-mute:#b8d4c9;
+  --green:#1f8a4c;--blue:#2b6fd6;--red:#d6322e;--black:#111;
+  --lift:#2b6fd6;--liftbg:#e3ecfb;--trail:#a85a00;--trailbg:#fdeccf;
+  --ok:#0e6b3a;--okbg:#d9f3e4;--warn:#8a5a00;--warnbg:#fff0c9;--bad:#9b2220;--badbg:#fde4e2;
+  --display:"Barlow Condensed","Arial Narrow",system-ui,sans-serif;
+  --body:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media(prefers-color-scheme:dark){:root{
+  --bg:#0d1411;--card:#16201b;--ink:#e8efeb;--mute:#9db1a7;--line:#263029;--soft:#1d2923;
+  --pine:#0a2a22;--pine2:#12463a;--onpine-mute:#9cc4b6;
+  --black:#f2f2f2;--green:#4fd18a;--blue:#7aa8ff;--red:#ff7a72;
+  --lift:#8fb4ff;--liftbg:#1a2a4a;--trail:#f6b765;--trailbg:#3a2a10;
+  --ok:#7ce8ac;--okbg:#12361f;--warn:#f6cf75;--warnbg:#3a2e0c;--bad:#ff9a94;--badbg:#3d1816}}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 -apple-system,system-ui,Segoe UI,Roboto,sans-serif}
-.wrap{max-width:880px;margin:0 auto;padding:20px 16px 60px}
-h1{font-size:24px;margin:0 0 4px}
-.sub{color:var(--mute);margin:0 0 14px}
-.note{background:var(--soft);border-radius:10px;padding:10px 12px;font-size:13px;color:var(--mute);margin-bottom:14px}
-.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
-select,input{font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
-input[type=number]{width:110px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:12px}
-.top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
-.price{font-size:26px;font-weight:700;line-height:1}
-.price small{font-size:13px;font-weight:400;color:var(--mute)}
-.route{font-weight:600}
-.meta{color:var(--mute);font-size:13px;margin-top:2px}
-.badge{display:inline-block;border-radius:999px;padding:3px 10px;font-size:12px;font-weight:600;white-space:nowrap}
-.hot{background:var(--hotbg);color:var(--hot)}.good{background:var(--goodbg);color:var(--good)}.flat{background:var(--soft);color:var(--mute)}
-.dests{margin:10px 0 0;padding:10px 0 0;border-top:1px solid var(--line);display:grid;gap:6px}
-.d b{font-weight:600}.d span{color:var(--mute);font-size:13px}
-.tag{font-size:11px;border:1px solid var(--line);border-radius:6px;padding:1px 6px;margin-left:6px;color:var(--mute)}
-a.book{display:inline-block;margin-top:12px;background:var(--accent);color:#fff;text-decoration:none;border-radius:8px;padding:8px 14px;font-weight:600;font-size:14px}
-.bike{margin-top:10px;background:var(--soft);border-radius:10px;padding:10px 12px;font-size:13px}
-.bike b{font-weight:600}.bike .how{color:var(--mute);margin-top:4px}
-.conf{font-size:11px;border-radius:6px;padding:1px 6px;margin-left:6px;font-weight:600}
-.c-official{background:var(--goodbg);color:var(--good)}.c-article{background:#fef9c3;color:#854d0e}.c-unverified{background:var(--hotbg);color:var(--hot)}
-@media(prefers-color-scheme:dark){.c-article{background:#3b3410;color:#fde68a}}
-.empty{text-align:center;color:var(--mute);padding:40px 0}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.45 var(--body)}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.top{background:var(--pine);color:var(--onpine)}
+.top .in{max-width:780px;margin:0 auto;padding:22px 16px 18px}
+h1{font:700 34px/1 var(--display);letter-spacing:.2px;margin:0}
+.lead{margin:8px 0 0;color:var(--onpine-mute);font-size:15px}
+.facts{display:flex;flex-wrap:wrap;gap:6px 22px;margin-top:14px}
+.fact b{font:700 26px/1 var(--display);margin-right:6px}
+.fact span{color:var(--onpine-mute);font-size:14px}
+.wrap{max-width:780px;margin:0 auto;padding:16px 16px 70px}
+.filters{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px}
+select,input{font:500 15px var(--body);color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px 11px;width:100%;min-height:44px}
+.key{display:flex;flex-wrap:wrap;gap:6px 16px;margin:12px 2px 14px;font-size:13px;color:var(--mute)}
+.key span{display:inline-flex;align-items:center}
+.about{margin:0 0 14px;font-size:14px;color:var(--mute)}
+.about summary{cursor:pointer;font-weight:600;color:var(--ink);padding:4px 0}
+.about p{margin:6px 0}
+/* markers: trail grades */
+.mk{display:inline-block;width:11px;height:11px;margin-right:7px;flex:none}
+.mk-black{background:var(--black);transform:rotate(45deg) scale(.82)}
+.mk-red{background:var(--red);border-radius:50%}
+.mk-blue{background:var(--blue);border-radius:2px}
+/* park rows */
+.park{background:var(--card);border:1px solid var(--line);border-radius:10px;margin-bottom:10px;overflow:hidden}
+.park>summary{list-style:none;display:grid;grid-template-columns:98px 1fr 30px;align-items:stretch;cursor:pointer}
+.park>summary::-webkit-details-marker{display:none}
+.post{background:var(--pine);color:var(--onpine);display:flex;flex-direction:column;justify-content:center;align-items:center;padding:12px 6px;text-align:center}
+.post .from{font-size:13px;color:var(--onpine-mute)}
+.post .amt{font:700 38px/1 var(--display)}
+.info{padding:12px 6px 12px 14px;min-width:0}
+.info h2{font:700 23px/1.1 var(--display);margin:0 0 4px}
+.sub{display:flex;flex-wrap:wrap;align-items:center;gap:4px 10px;color:var(--mute);font-size:14px}
+.pill{font-size:12px;font-weight:600;border-radius:5px;padding:1px 7px}
+.pill.lift{background:var(--liftbg);color:var(--lift)}.pill.trail{background:var(--trailbg);color:var(--trail)}
+.stats{display:flex;flex-wrap:wrap;align-items:center;gap:4px 14px;margin-top:8px;font-size:14px}
+.stats b{font-weight:600}
+.best{display:inline-flex;align-items:center;font-weight:600}
+.chev{display:flex;align-items:center;justify-content:center;color:var(--mute)}
+.chev::before{content:"";width:9px;height:9px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg);margin-top:-4px;transition:transform .15s}
+.park[open]>summary .chev::before{transform:rotate(225deg);margin-top:4px}
+.park[open]>summary{border-bottom:1px solid var(--line)}
+@media(prefers-reduced-motion:reduce){.chev::before{transition:none}}
+/* deals */
+.deal{padding:14px 16px;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr auto;gap:2px 12px}
+.deal:first-child{border-top:0}
+.dates{font:700 22px/1.1 var(--display)}
+.how{color:var(--mute);font-size:14px}
+.cost{text-align:right}
+.fare{font:700 24px/1.1 var(--display)}
+.disc{display:inline-flex;align-items:center;font-size:13px;font-weight:600;white-space:nowrap}
+.bikebox{grid-column:1/-1;margin-top:8px;background:var(--soft);border-radius:8px;padding:9px 11px;font-size:14px}
+.tot b{font-weight:600}
+.conf{font-size:12px;font-weight:600;border-radius:5px;padding:1px 7px;margin-left:6px;white-space:nowrap}
+.c-official,.c-user{background:var(--okbg);color:var(--ok)}
+.c-article{background:var(--warnbg);color:var(--warn)}
+.c-unverified{background:var(--badbg);color:var(--bad)}
+.rules summary{cursor:pointer;color:var(--mute);font-size:13px;margin-top:5px}
+.rules p{margin:5px 0 0;color:var(--mute);font-size:13px}
+.go{grid-column:1/-1;justify-self:start;margin-top:10px;background:var(--pine);color:var(--onpine);text-decoration:none;font-weight:600;border-radius:8px;padding:11px 16px;min-height:44px;display:inline-flex;align-items:center}
+.go:hover{background:var(--pine2)}
+.nogo{grid-column:1/-1;margin-top:8px;font-size:13px;color:var(--mute)}
+.fine{grid-column:1/-1;font-size:12px;color:var(--mute);margin-top:4px}
+.more{padding:10px 16px 14px;font-size:13px;color:var(--mute)}
+.empty{padding:36px 8px;text-align:center;color:var(--mute)}
+@media(max-width:420px){.park>summary{grid-template-columns:84px 1fr 26px}.post .amt{font-size:32px}.info h2{font-size:21px}}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <h1>Ride Deals from TLV</h1>
-  <p class="sub">Direct flights only, to places that are open for riding on your dates.</p>
-  <div class="note" id="note">Loading...</div>
+<header class="top"><div class="in">
+  <h1>Ride Deals TLV</h1>
+  <p class="lead">Direct flights from Tel Aviv to bike parks that are open on your dates.</p>
+  <div class="facts" id="facts"></div>
+</div></header>
+<main class="wrap">
   <div class="filters">
-    <select id="month"><option value="">Any month</option></select>
-    <select id="type"><option value="">All riding types</option><option value="lift">Lift-served bike parks</option><option value="trail">Shuttle / trail riding</option></select>
-    <select id="sort"><option value="deal">Best deal first</option><option value="price">Lowest price</option><option value="total">Lowest total with bike (est.)</option><option value="date">Soonest</option></select>
-    <select id="known"><option value="">All airlines</option><option value="1">Bike fee known only</option></select>
-    <input id="max" type="number" inputmode="numeric" placeholder="Max $">
-    <input id="q" type="search" placeholder="Search place">
+    <select id="month" aria-label="Month"><option value="">Any month</option></select>
+    <select id="type" aria-label="Riding type"><option value="">All riding types</option><option value="lift">Lift-served parks</option><option value="trail">Shuttle and trail</option></select>
+    <select id="sort" aria-label="Sort parks"><option value="deal">Best deal first</option><option value="price">Lowest flight price</option><option value="total">Lowest total with bike</option><option value="date">Soonest</option></select>
+    <select id="known" aria-label="Airlines"><option value="">All airlines</option><option value="1">Bike fee known only</option></select>
+    <input id="max" type="number" inputmode="numeric" placeholder="Max price, $" aria-label="Maximum flight price in dollars">
+    <input id="q" type="search" placeholder="Search park" aria-label="Search park or country">
   </div>
+  <div class="key" aria-label="Deal markers">
+    <span><i class="mk mk-black"></i>30% or more below usual</span>
+    <span><i class="mk mk-red"></i>15% or more</span>
+    <span><i class="mk mk-blue"></i>close to usual</span>
+  </div>
+  <details class="about"><summary>How to read this page</summary>
+    <p id="aboutText"></p>
+    <p>Prices are cached estimates for direct round trips. Always confirm the fare and add your bike on the airline's own website. The total with bike adds the airline's bike fee for both directions.</p>
+  </details>
   <div id="list"></div>
-</div>
+</main>
 <script>
 const $=id=>document.getElementById(id);
-let DATA=null,AL={airlines:{},eur_usd:1.15};
-function sources(){
-  const u=[];
-  const m=location.hostname.match(/^(.+)\.github\.io$/), p=location.pathname.split("/")[1];
-  if(m&&p) u.push(`https://raw.githubusercontent.com/${m[1]}/${p}/main/data/deals.json`);
-  u.push("data/deals.json");
-  return u;
+let DATA=null,AL={airlines:{},eur_usd:1.15};const OPEN=new Set();
+const rate=p=>p.fee_currency==='USD'?1:(AL.eur_usd||1.15);
+const CONF={official:"Checked on airline site",user:"Reported by you",article:"From an article, confirm",unverified:"Not verified"};
+const esc=s=>String(s).replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/</g,"&lt;");
+function sources(file){
+  const u=[],m=location.hostname.match(/^(.+)\.github\.io$/),p=location.pathname.split("/")[1];
+  if(m&&p)u.push(`https://raw.githubusercontent.com/${m[1]}/${p}/main/${file}`);
+  u.push(file);return u;
 }
-async function load(){
-  for(const u of sources()){
-    try{const r=await fetch(u+"?t="+Date.now());if(r.ok){DATA=await r.json();return}}catch(e){}
-  }
-  throw new Error("no data");
+async function getJSON(file){
+  for(const u of sources(file)){try{const r=await fetch(u+"?t="+Date.now());if(r.ok)return await r.json()}catch(e){}}
+  throw new Error(file);
 }
 const fmtDate=d=>new Date(d+"T12:00:00").toLocaleDateString("en-GB",{day:"numeric",month:"short"});
 const monthName=m=>new Date(m+"-15").toLocaleDateString("en-GB",{month:"long",year:"numeric"});
-function badge(o){
+const nights=o=>Math.round((new Date(o.return)-new Date(o.depart))/864e5);
+const money=(a,b)=>a===b?`$${a}`:`$${a}–$${b}`;
+function marker(o){
   if(o.discount==null)return"";
   const pct=Math.round(o.discount*100);
-  if(pct>=30)return`<span class="badge hot">${pct}% below usual</span>`;
-  if(pct>=15)return`<span class="badge good">${pct}% below usual</span>`;
-  return`<span class="badge flat">${pct>0?pct+"% below":"around"} usual</span>`;
+  const k=pct>=30?"black":pct>=15?"red":"blue";
+  return`<span class="disc"><i class="mk mk-${k}"></i>${pct>0?pct+"% below usual":"about usual"}</span>`;
 }
-const CONF={official:"Checked on airline site",article:"From an article, confirm",unverified:"Not verified"};
 function bikeInfo(o){
   const p=AL.airlines[o.airline]||{name:o.airline||"Unknown airline",url:"",confidence:"unverified",how:"Not verified yet. Check the airline's baggage rules before booking."};
   let lo=null,hi=null;
-  if(p.fee_min!=null){
-    const r=AL.eur_usd||1.15;
-    lo=Math.round(o.price+2*p.fee_min*r);hi=Math.round(o.price+2*p.fee_max*r);
-  }
-  return {p,lo,hi,mid:lo==null?null:(lo+hi)/2};
+  if(p.fee_min!=null){const r=rate(p);lo=Math.round(o.price+2*p.fee_min*r);hi=Math.round(o.price+2*p.fee_max*r)}
+  return{p,lo,hi,mid:lo==null?null:(lo+hi)/2};
 }
-const money=(a,b)=>a===b?`$${a}`:`$${a}–$${b}`;
+function bikeHTML(b){
+  const p=b.p,c=`<span class="conf c-${p.confidence}">${CONF[p.confidence]}</span>`;
+  if(b.lo==null)return`<div class="bikebox"><div class="tot"><b>Bike fee not verified</b>${c}</div><details class="rules"><summary>What to do</summary><p>${p.how}</p></details></div>`;
+  const f=money(Math.round(p.fee_min*rate(p)),Math.round(p.fee_max*rate(p)));
+  return`<div class="bikebox"><div class="tot">With bike, round trip: <b>about ${money(b.lo,b.hi)}</b>${c}</div><details class="rules"><summary>Bike fee and rules</summary><p>About ${f} each way. ${p.how}${p.max_kg?` Max ${p.max_kg} kg.`:""}</p></details></div>`;
+}
+function dealHTML(o,b){
+  const p=b.p;
+  const go=p.url?`<a class="go" href="${esc(p.url)}" target="_blank" rel="noopener">Check on ${esc(p.name)} website</a>`:`<div class="nogo">Find ${esc(p.name)}'s own website and search the same dates.</div>`;
+  return`<div class="deal">
+    <div><div class="dates">${fmtDate(o.depart)} – ${fmtDate(o.return)}</div><div class="how">${nights(o)} nights, ${esc(p.name)}, via ${esc(o.airport_name)} (${o.airport})</div></div>
+    <div class="cost"><div class="fare">~$${Math.round(o.price)}</div>${marker(o)}</div>
+    ${bikeHTML(b)}${go}
+    <div class="fine">Search TLV to ${o.airport}. The fare is a cached estimate.</div></div>`;
+}
+function build(){
+  const mo=$("month").value,ty=$("type").value,mx=+$("max").value||0,q=$("q").value.trim().toLowerCase(),kn=$("known").value,so=$("sort").value;
+  const map=new Map();
+  for(const o of DATA.offers){
+    if(mo&&!o.depart.startsWith(mo))continue;
+    if(mx&&o.price>mx)continue;
+    const b=bikeInfo(o);if(kn&&b.lo==null)continue;
+    for(const d of o.destinations){
+      if(ty&&d.type!==ty)continue;
+      if(q&&!(d.name+" "+d.country).toLowerCase().includes(q))continue;
+      if(!map.has(d.name))map.set(d.name,{d,deals:[]});
+      map.get(d.name).deals.push({o,b});
+    }
+  }
+  const cmp={price:(x,y)=>x.o.price-y.o.price,date:(x,y)=>x.o.depart.localeCompare(y.o.depart),
+    total:(x,y)=>(x.b.mid??1e9)-(y.b.mid??1e9),deal:(x,y)=>((y.o.discount??-1)-(x.o.discount??-1))||x.o.price-y.o.price}[so];
+  const G=[...map.values()];
+  for(const g of G){
+    g.deals.sort(cmp);
+    g.minPrice=Math.min(...g.deals.map(x=>x.o.price));
+    const los=g.deals.map(x=>x.b.lo).filter(v=>v!=null);g.minLo=los.length?Math.min(...los):null;
+    g.maxDisc=Math.max(...g.deals.map(x=>x.o.discount??-1));
+    g.first=g.deals.map(x=>x.o.depart).sort()[0];
+  }
+  const gs={price:(x,y)=>x.minPrice-y.minPrice,date:(x,y)=>x.first.localeCompare(y.first),
+    total:(x,y)=>(x.minLo??1e9)-(y.minLo??1e9),deal:(x,y)=>(y.maxDisc-x.maxDisc)||x.minPrice-y.minPrice}[so];
+  return G.sort(gs);
+}
 function render(){
-  const mo=$("month").value,ty=$("type").value,mx=+$("max").value||0,q=$("q").value.trim().toLowerCase(),so=$("sort").value,kn=$("known").value;
-  let L=DATA.offers.map(o=>({o,b:bikeInfo(o)})).filter(({o,b})=>
-    (!mo||o.depart.startsWith(mo))&&(!mx||o.price<=mx)&&(!kn||b.lo!=null)&&
-    o.destinations.some(d=>(!ty||d.type===ty)&&(!q||(d.name+d.country).toLowerCase().includes(q))));
-  L.sort((x,y)=>so==="price"?x.o.price-y.o.price:so==="date"?x.o.depart.localeCompare(y.o.depart):
-    so==="total"?((x.b.mid??1e9)-(y.b.mid??1e9)):((y.o.discount??-1)-(x.o.discount??-1))||x.o.price-y.o.price);
-  if(!L.length){$("list").innerHTML='<div class="empty">No matching deals right now.</div>';return}
-  $("list").innerHTML=L.slice(0,60).map(({o,b})=>{
-    const ds=o.destinations.filter(d=>(!ty||d.type===ty)&&(!q||(d.name+d.country).toLowerCase().includes(q)));
-    const p=b.p;
-    const bike=b.lo!=null
-      ?`<div class="bike"><b>Bike: about ${money(Math.round(p.fee_min*(AL.eur_usd||1.15)),Math.round(p.fee_max*(AL.eur_usd||1.15)))} each way</b><span class="conf c-${p.confidence}">${CONF[p.confidence]}</span><br>Estimated total with bike, round trip: <b>about ${money(b.lo,b.hi)}</b><div class="how">${p.how}${p.max_kg?` Max ${p.max_kg} kg.`:""}</div></div>`
-      :`<div class="bike"><b>Bike fee not verified</b><span class="conf c-unverified">${CONF.unverified}</span><div class="how">${p.how}</div></div>`;
-    return`<div class="card"><div class="top"><div>
-      <div class="price">~$${Math.round(o.price)} <small>round trip, flight only</small></div>
-      <div class="route">TLV → ${o.airport_name} (${o.airport})</div>
-      <div class="meta">${fmtDate(o.depart)} – ${fmtDate(o.return)} · ${p.name} · direct</div></div>
-      ${badge(o)}</div>
-      ${bike}
-      <div class="dests">${ds.map(d=>`<div class="d"><b>${d.name}</b><span class="tag">${d.type==="lift"?"lift park":"trail / shuttle"}</span><br><span>${d.country} · transfer ${d.transfer}${d.notes?" · "+d.notes:""}</span></div>`).join("")}</div>
-      ${p.url?`<a class="book" href="${p.url}" target="_blank" rel="noopener">Check on ${p.name} website</a><div class="meta" style="margin-top:6px">Search TLV → ${o.airport} for ${fmtDate(o.depart)} – ${fmtDate(o.return)}. The price above is a cached estimate.</div>`:`<div class="meta" style="margin-top:10px">Find this airline's own website and search TLV → ${o.airport} for ${fmtDate(o.depart)} – ${fmtDate(o.return)}. The price above is a cached estimate.</div>`}
-    </div>`}).join("");
+  const G=build();
+  if(!G.length){$("list").innerHTML='<div class="empty">No deals match these filters. Try another month or remove the price limit.</div>';return}
+  $("list").innerHTML=G.map(g=>{
+    const d=g.d,n=g.deals.length,best=g.deals[0];
+    const top=g.maxDisc>=0.15?marker({discount:g.maxDisc}):"";
+    return`<details class="park" data-n="${esc(d.name)}"${OPEN.has(d.name)?" open":""}>
+      <summary><div class="post"><span class="from">from</span><span class="amt">$${Math.round(g.minPrice)}</span></div>
+      <div class="info"><h2>${esc(d.name)}</h2>
+        <div class="sub"><span>${esc(d.country)}</span><span class="pill ${d.type}">${d.type==="lift"?"lift park":"shuttle and trail"}</span><span>transfer ${esc(d.transfer)}</span></div>
+        <div class="stats">${g.minLo!=null?`<span><b>about $${g.minLo}</b> with bike</span>`:""}<span>${n} ${n===1?"date":"dates"}</span>${top?`<span class="best">${top}</span>`:""}</div></div>
+      <span class="chev" aria-hidden="true"></span></summary>
+      <div>${g.deals.slice(0,12).map(x=>dealHTML(x.o,x.b)).join("")}${n>12?`<div class="more">Showing the first 12 of ${n}. Pick a month to narrow it down.</div>`:""}</div>
+    </details>`}).join("");
 }
 function setup(){
   const ms=[...new Set(DATA.offers.map(o=>o.depart.slice(0,7)))].sort();
   $("month").innerHTML='<option value="">Any month</option>'+ms.map(m=>`<option value="${m}">${monthName(m)}</option>`).join("");
+  const names=new Set();DATA.offers.forEach(o=>o.destinations.forEach(d=>names.add(d.name)));
+  const cheapest=DATA.offers.length?Math.round(Math.min(...DATA.offers.map(o=>o.price))):0;
   const upd=new Date(DATA.generated).toLocaleDateString("en-GB",{day:"numeric",month:"short"});
+  $("facts").innerHTML=`<div class="fact"><b>${names.size}</b><span>parks with direct flights</span></div><div class="fact"><b>$${cheapest}</b><span>cheapest fare found</span></div><div class="fact"><b>${upd}</b><span>last update</span></div>`;
   const early=DATA.history_days<DATA.min_history_days;
-  $("note").textContent=`Updated ${upd}. Prices in ${DATA.currency} are cached estimates. Always confirm the fare and add the bike on the airline's own website. `+
-    (early?`Price history is ${DATA.history_days} day${DATA.history_days>1?"s":""} old, so "below usual" is compared against other dates in the same month for now. It becomes more accurate after ${DATA.min_history_days} days.`:`"Below usual" compares with this route's own price history (${DATA.history_days} days).`);
+  $("aboutText").textContent=early
+    ?`Price history is ${DATA.history_days} day${DATA.history_days>1?"s":""} old, so "below usual" compares a fare with other dates in the same month. After ${DATA.min_history_days} days it compares with that route's own history.`
+    :`"Below usual" compares a fare with that route's own price history (${DATA.history_days} days).`;
   ["month","type","sort","known","max","q"].forEach(i=>$(i).addEventListener("input",render));
+  $("list").addEventListener("toggle",e=>{const n=e.target.dataset&&e.target.dataset.n;if(n){e.target.open?OPEN.add(n):OPEN.delete(n)}},true);
   render();
 }
-async function loadAL(){
-  for(const u of sources().map(x=>x.replace("deals.json","../airlines.json").replace("/data/../","/"))){
-    try{const r=await fetch(u+"?t="+Date.now());if(r.ok){AL=await r.json();return}}catch(e){}
-  }
-}
-Promise.all([load(),loadAL()]).then(setup).catch(()=>{$("note").textContent="No price data yet. Run the collector from the Actions tab.";$("list").innerHTML=""});
+Promise.all([getJSON("data/deals.json"),getJSON("airlines.json").catch(()=>AL)])
+  .then(([d,a])=>{DATA=d;AL=a;setup()})
+  .catch(()=>{$("list").innerHTML='<div class="empty">No price data yet. Run the collector from the Actions tab.</div>'});
 </script>
 </body>
 </html>

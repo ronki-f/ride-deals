@@ -2,24 +2,92 @@
  "eur_usd": 1.15,
  "eur_usd_note": "Assumed rough exchange rate, update when needed",
  "airlines": {
-  "BZ": {"name":"Blue Bird Airways","url":"https://bluebirdair.com","fee_min":111,"fee_max":111,"max_kg":32,
-    "how":"Email bookings@bluebirdair.com at least 7 days before the flight with their sports equipment form (SSR-05). Without approval they can refuse the bike at check-in.",
-    "confidence":"official","checked":"2026-10-14","source":"https://bluebirdair.com/Travel-information/Sporting-equipment"},
-  "DE": {"name":"Condor","url":"https://www.condor.com","fee_min":60,"fee_max":100,"max_kg":30,
-    "how":"Register the bike online in My booking, up to 8 hours before departure. Cheaper online than at the airport. Bike must be packed.",
-    "confidence":"official","checked":"2026-10-14","source":"https://www.condor.com/eu/flight-preparation/baggage-and-animals/sports-equipment-and-other-baggage/sports-equipment.jsp"},
-  "OS": {"name":"Austrian Airlines","url":"https://www.austrian.com","fee_min":80,"fee_max":270,"max_kg":32,
-    "how":"Registration by phone or email is mandatory and the bike is only guaranteed after they confirm. Fee depends on the route, plus a small service fee.",
-    "confidence":"article","checked":"2026-10-14","source":"https://velomotion.net/2026/06/Bicycle-transport-on-the-plane/"},
-  "W6": {"name":"Wizz Air","url":"https://wizzair.com","fee_min":30,"fee_max":45,"max_kg":32,
-    "how":"Sports equipment is added on Wizz Air's own site. Confirm the current fee there before paying.",
-    "confidence":"article","checked":"2026-10-14","source":"https://www.moreadventure.co.uk/what-are-the-costs-of-flying-with-a-bicycle/"},
-  "W4": {"name":"Wizz Air","url":"https://wizzair.com","fee_min":30,"fee_max":45,"max_kg":32,
-    "how":"Sports equipment is added on Wizz Air's own site. Confirm the current fee there before paying.",
-    "confidence":"article","checked":"2026-10-14","source":"https://www.moreadventure.co.uk/what-are-the-costs-of-flying-with-a-bicycle/"},
-  "LY": {"name":"El Al","url":"https://www.elal.com","confidence":"unverified","how":"Not verified yet. Check El Al's sports equipment page before booking."},
-  "IZ": {"name":"Arkia","url":"https://www.arkia.com","confidence":"unverified","how":"Not verified yet. Check Arkia's baggage rules before booking."},
-  "6H": {"name":"Israir","url":"https://www.israir.co.il","confidence":"unverified","how":"Not verified yet. Check Israir's baggage rules before booking."},
-  "3E": {"name":"Air Choice One","url":"","confidence":"unverified","how":"Not verified yet. Search the airline's own website and ask before booking."}
+  "BZ": {
+   "name": "Blue Bird Airways",
+   "url": "https://bluebirdair.com",
+   "fee_min": 111,
+   "fee_max": 111,
+   "max_kg": 32,
+   "how": "Email bookings@bluebirdair.com at least 7 days before the flight with their sports equipment form (SSR-05). Without approval they can refuse the bike at check-in.",
+   "confidence": "official",
+   "checked": "2026-10-14",
+   "source": "https://bluebirdair.com/Travel-information/Sporting-equipment"
+  },
+  "DE": {
+   "name": "Condor",
+   "url": "https://www.condor.com",
+   "fee_min": 60,
+   "fee_max": 100,
+   "max_kg": 30,
+   "how": "Register the bike online in My booking, up to 8 hours before departure. Cheaper online than at the airport. Bike must be packed.",
+   "confidence": "official",
+   "checked": "2026-10-14",
+   "source": "https://www.condor.com/eu/flight-preparation/baggage-and-animals/sports-equipment-and-other-baggage/sports-equipment.jsp"
+  },
+  "OS": {
+   "name": "Austrian Airlines",
+   "url": "https://www.austrian.com",
+   "fee_min": 80,
+   "fee_max": 270,
+   "max_kg": 32,
+   "how": "Registration by phone or email is mandatory and the bike is only guaranteed after they confirm. Fee depends on the route, plus a small service fee.",
+   "confidence": "article",
+   "checked": "2026-10-14",
+   "source": "https://velomotion.net/2026/06/Bicycle-transport-on-the-plane/"
+  },
+  "W6": {
+   "name": "Wizz Air",
+   "url": "https://wizzair.com",
+   "fee_min": 30,
+   "fee_max": 45,
+   "max_kg": 32,
+   "how": "Sports equipment is added on Wizz Air's own site. Confirm the current fee there before paying.",
+   "confidence": "article",
+   "checked": "2026-10-14",
+   "source": "https://www.moreadventure.co.uk/what-are-the-costs-of-flying-with-a-bicycle/"
+  },
+  "W4": {
+   "name": "Wizz Air",
+   "url": "https://wizzair.com",
+   "fee_min": 30,
+   "fee_max": 45,
+   "max_kg": 32,
+   "how": "Sports equipment is added on Wizz Air's own site. Confirm the current fee there before paying.",
+   "confidence": "article",
+   "checked": "2026-10-14",
+   "source": "https://www.moreadventure.co.uk/what-are-the-costs-of-flying-with-a-bicycle/"
+  },
+  "LY": {
+   "name": "El Al",
+   "url": "https://www.elal.com",
+   "fee_min": 70,
+   "fee_max": 70,
+   "fee_currency": "USD",
+   "how": "Fee reported by you. Check El Al's sports equipment page for size and weight limits and how to add it.",
+   "confidence": "user",
+   "checked": "2026-10-14"
+  },
+  "IZ": {
+   "name": "Arkia",
+   "url": "https://www.arkia.com",
+   "fee_min": 50,
+   "fee_max": 50,
+   "fee_currency": "USD",
+   "how": "Fee reported by you. Check Arkia's baggage page for size and weight limits and how to add it.",
+   "confidence": "user",
+   "checked": "2026-10-14"
+  },
+  "6H": {
+   "name": "Israir",
+   "url": "https://www.israir.co.il",
+   "confidence": "unverified",
+   "how": "Not verified yet. Check Israir's baggage rules before booking."
+  },
+  "3E": {
+   "name": "Air Choice One",
+   "url": "",
+   "confidence": "unverified",
+   "how": "Not verified yet. Search the airline's own website and ask before booking."
+  }
  }
 }

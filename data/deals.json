@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-30T04:35:45Z",
+ "generated": "2026-10-31T04:32:23Z",
  "currency": "USD",
- "history_days": 18,
+ "history_days": 19,
  "min_history_days": 7,
  "no_direct_airports": [
   "BGY",
@@ -13,6 +13,7 @@
   "GRO",
   "GRZ",
   "INN",
+  "KTW",
   "LJU",
   "NCE",
   "TFN",
@@ -68,16 +69,37 @@
   {
    "airport": "MXP",
    "airport_name": "Milan Malpensa",
-   "depart": "2027-03-07",
-   "return": "2027-03-14",
-   "price": 135.0,
+   "depart": "2027-06-10",
+   "return": "2027-06-16",
+   "price": 174.0,
    "airline": "W4",
-   "flight": "6404",
-   "baseline": 179,
+   "flight": "6434",
+   "baseline": 216,
    "basis": "history",
-   "discount": 0.246,
-   "link": "https://www.aviasales.com/search/TLV0703MXP14031?t=W418044457001804458000000265TLVMXP18050004001805018100000235MXPTLV_1f510052e96ee748f1d5ba1e8e38d59d_10870&search_date=29102026&expected_price_uuid=01a18844-2a83-8030-6173-b620b91ad80d&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=GsCiaBixpyeWnZpzCorWHg&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=135",
+   "discount": 0.194,
+   "link": "https://www.aviasales.com/search/TLV1006MXP16061?t=W418126537001812665400000255TLVMXP18131220001813139700000235MXPTLV_a8f1c987d623cfd47b3616b5fec83b53_14029&search_date=30102026&expected_price_uuid=01a18c32-6866-8031-272e-c59e22e67dd6&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=_XoxhAgiWYl26VGKcyOCLw&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=174",
    "destinations": [
+    {
+     "name": "Pila (Aosta)",
+     "country": "Italy",
+     "type": "lift",
+     "transfer": "~1h30-1h45 (TRN)",
+     "notes": "Your list"
+    },
+    {
+     "name": "La Thuile",
+     "country": "Italy",
+     "type": "lift",
+     "transfer": "~2h (TRN)",
+     "notes": "Your list"
+    },
+    {
+     "name": "Livigno",
+     "country": "Italy",
+     "type": "lift",
+     "transfer": "~3h (long transfer)",
+     "notes": "Long transfer"
+    },
     {
      "name": "Finale Ligure",
      "country": "Italy",
@@ -90,16 +112,37 @@
   {
    "airport": "MXP",
    "airport_name": "Milan Malpensa",
-   "depart": "2027-03-17",
-   "return": "2027-03-20",
-   "price": 143.0,
+   "depart": "2027-06-10",
+   "return": "2027-06-17",
+   "price": 184.0,
    "airline": "W4",
-   "flight": "6404",
-   "baseline": 179,
+   "flight": "6434",
+   "baseline": 216,
    "basis": "history",
-   "discount": 0.201,
-   "link": "https://www.aviasales.com/search/TLV1703MXP20031?t=W418053097001805322000000265TLVMXP18055188001805536500000235MXPTLV_c3d1e91415608e85996c433a1732d404_11619&search_date=29102026&expected_price_uuid=01a18941-384d-8030-a1c7-e03aeadb5b10&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=BkL-EidzSnKZLW5RGKoOVg&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=143",
+   "discount": 0.148,
+   "link": "https://www.aviasales.com/search/TLV1006MXP17061?t=W418126537001812665400000255TLVMXP18132084001813226100000235MXPTLV_eba9cbcd88dbd867193d7bc96f7642ec_14835&search_date=30102026&expected_price_uuid=01a18c31-9f24-8030-6faa-bd48853200f9&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=xFj6eNnYN8ikqRw7P_Jaag&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=184",
    "destinations": [
+    {
+     "name": "Pila (Aosta)",
+     "country": "Italy",
+     "type": "lift",
+     "transfer": "~1h30-1h45 (TRN)",
+     "notes": "Your list"
+    },
+    {
+     "name": "La Thuile",
+     "country": "Italy",
+     "type": "lift",
+     "transfer": "~2h (TRN)",
+     "notes": "Your list"
+    },
+    {
+     "name": "Livigno",
+     "country": "Italy",
+     "type": "lift",
+     "transfer": "~3h (long transfer)",
+     "notes": "Long transfer"
+    },
     {
      "name": "Finale Ligure",
      "country": "Italy",
@@ -110,24 +153,24 @@
    ]
   },
   {
-   "airport": "MUC",
-   "airport_name": "Munich",
-   "depart": "2027-09-16",
-   "return": "2027-09-20",
-   "price": 373.0,
-   "airline": "LH",
-   "flight": "681",
-   "baseline": 432,
+   "airport": "MXP",
+   "airport_name": "Milan Malpensa",
+   "depart": "2027-03-07",
+   "return": "2027-03-14",
+   "price": 135.0,
+   "airline": "W4",
+   "flight": "6404",
+   "baseline": 157,
    "basis": "history",
-   "discount": 0.137,
-   "link": "https://www.aviasales.com/search/TLV1609MUC20091?t=LH18211143001821125700000250TLVMUC18214386001821456000000230MUCTLV_155c170fbf476bea058f820ea872ad78_30045&search_date=27102026&expected_price_uuid=01a17d02-03d5-8031-65d8-d52fdd095473&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=zGIBuVL1BQ12G40JzCRzJA&expected_price_source=share&expected_price_currency=usd&expected_price=373",
+   "discount": 0.14,
+   "link": "https://www.aviasales.com/search/TLV0703MXP14031?t=W418044457001804458000000265TLVMXP18050004001805018100000235MXPTLV_1f510052e96ee748f1d5ba1e8e38d59d_10870&search_date=29102026&expected_price_uuid=01a18844-2a83-8030-6173-b620b91ad80d&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=GsCiaBixpyeWnZpzCorWHg&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=135",
    "destinations": [
     {
-     "name": "Leogang - Saalbach-Hinterglemm",
-     "country": "Austria",
-     "type": "lift",
-     "transfer": "~1h (SZG), ~2h (MUC)",
-     "notes": "Top-tier park, Leogang and Saalbach on one area"
+     "name": "Finale Ligure",
+     "country": "Italy",
+     "type": "trail",
+     "transfer": "~1h15 (GOA)",
+     "notes": "The enduro classic, shuttles run most of the year"
     }
    ]
   },
@@ -154,46 +197,46 @@
    ]
   },
   {
-   "airport": "BCN",
-   "airport_name": "Barcelona",
-   "depart": "2027-07-14",
-   "return": "2027-07-23",
-   "price": 477.0,
-   "airline": "LY",
-   "flight": "391",
-   "baseline": 528,
+   "airport": "MUC",
+   "airport_name": "Munich",
+   "depart": "2027-09-16",
+   "return": "2027-09-20",
+   "price": 373.0,
+   "airline": "LH",
+   "flight": "681",
+   "baseline": 418,
    "basis": "history",
-   "discount": 0.097,
-   "link": "https://www.aviasales.com/search/TLV1407BCN23071?t=LY18155871001815600300000280TLVBCN18163395001816357800000245BCNTLV_040e34e01d9c09167b8af4fa91a6136c_38470&search_date=23102026&expected_price_uuid=01a169ff-f1a5-8030-280a-38aae9026dba&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=WBTGIRenL04myUe0fvvpgw&expected_price_source=share&expected_price_currency=usd&expected_price=477",
+   "discount": 0.109,
+   "link": "https://www.aviasales.com/search/TLV1609MUC20091?t=LH18211143001821125700000250TLVMUC18214386001821456000000230MUCTLV_155c170fbf476bea058f820ea872ad78_30045&search_date=27102026&expected_price_uuid=01a17d02-03d5-8031-65d8-d52fdd095473&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=zGIBuVL1BQ12G40JzCRzJA&expected_price_source=share&expected_price_currency=usd&expected_price=373",
    "destinations": [
     {
-     "name": "Girona",
-     "country": "Spain",
-     "type": "trail",
-     "transfer": "~1h (GRO), ~1h30 (BCN)",
-     "notes": "Mild winters, shuttle and trail riding"
+     "name": "Leogang - Saalbach-Hinterglemm",
+     "country": "Austria",
+     "type": "lift",
+     "transfer": "~1h (SZG), ~2h (MUC)",
+     "notes": "Top-tier park, Leogang and Saalbach on one area"
     }
    ]
   },
   {
-   "airport": "BCN",
-   "airport_name": "Barcelona",
-   "depart": "2027-07-14",
-   "return": "2027-07-22",
-   "price": 487.0,
-   "airline": "LY",
-   "flight": "391",
-   "baseline": 528,
+   "airport": "MXP",
+   "airport_name": "Milan Malpensa",
+   "depart": "2027-03-17",
+   "return": "2027-03-20",
+   "price": 143.0,
+   "airline": "W4",
+   "flight": "6404",
+   "baseline": 157,
    "basis": "history",
-   "discount": 0.078,
-   "link": "https://www.aviasales.com/search/TLV1407BCN22071?t=LY18155871001815600300000280TLVBCN18162531001816271400000245BCNTLV_9ed9589796405cb6971d5957834ffbb6_39241&search_date=23102026&expected_price_uuid=01a16a6d-e28c-8030-af9e-1aaf4b6f8617&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=aZJroD2DiBkER1yEejTblw&expected_price_source=share&expected_price_currency=usd&expected_price=487",
+   "discount": 0.089,
+   "link": "https://www.aviasales.com/search/TLV1703MXP20031?t=W418053097001805322000000265TLVMXP18055188001805536500000235MXPTLV_c3d1e91415608e85996c433a1732d404_11619&search_date=29102026&expected_price_uuid=01a18941-384d-8030-a1c7-e03aeadb5b10&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=BkL-EidzSnKZLW5RGKoOVg&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=143",
    "destinations": [
     {
-     "name": "Girona",
-     "country": "Spain",
+     "name": "Finale Ligure",
+     "country": "Italy",
      "type": "trail",
-     "transfer": "~1h (GRO), ~1h30 (BCN)",
-     "notes": "Mild winters, shuttle and trail riding"
+     "transfer": "~1h15 (GOA)",
+     "notes": "The enduro classic, shuttles run most of the year"
     }
    ]
   },
@@ -205,9 +248,9 @@
    "price": 192.0,
    "airline": "W4",
    "flight": "6718",
-   "baseline": 207,
+   "baseline": 206,
    "basis": "history",
-   "discount": 0.072,
+   "discount": 0.066,
    "link": "https://www.aviasales.com/search/TLV2105VCE24051?t=W418108972001810907700000235TLVVCE18111366001811153100000215VCETLV_59c3d978f1879abf245718be5b7c04a9_15437&search_date=29102026&expected_price_uuid=01a1864d-1b61-8030-6729-896401005ebe&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=dflP9ifuCbLnGrjv3KLR9A&expected_price_source=share&expected_price_currency=usd&expected_price=192",
    "destinations": [
     {
@@ -216,28 +259,6 @@
      "type": "lift",
      "transfer": "~2h15 (INN)",
      "notes": ""
-    }
-   ]
-  },
-  {
-   "airport": "KRK",
-   "airport_name": "Krakow",
-   "depart": "2027-07-20",
-   "return": "2027-07-28",
-   "price": 308.0,
-   "airline": "W6",
-   "flight": "1998",
-   "baseline": 327,
-   "basis": "history",
-   "discount": 0.058,
-   "link": "https://www.aviasales.com/search/TLV2007KRK28071?t=W618161157001816125600000225TLVKRK18167532001816769400000210KRKTLV_4e9280da4deea63512e480f39ddac756_24809&search_date=27102026&expected_price_uuid=01a17d65-4d84-8030-efd5-011626ab5bf2&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=2eydioUtm-wuaDcupG9FwA&expected_price_source=share&expected_price_currency=usd&expected_price=308",
-   "destinations": [
-    {
-     "name": "Szczyrk",
-     "country": "Poland",
-     "type": "lift",
-     "transfer": "~1h-1h15 (KTW)",
-     "notes": "Your list"
     }
    ]
   },
@@ -288,15 +309,15 @@
   {
    "airport": "MXP",
    "airport_name": "Milan Malpensa",
-   "depart": "2026-12-27",
-   "return": "2026-12-31",
+   "depart": "2026-12-28",
+   "return": "2027-01-05",
    "price": 111.0,
    "airline": "W4",
    "flight": "6404",
-   "baseline": 117,
+   "baseline": 116,
    "basis": "history",
-   "discount": 0.051,
-   "link": "https://www.aviasales.com/search/TLV2712MXP31121?t=W417983977001798410000000265TLVMXP17986932001798710900000235MXPTLV_6604ee2350f27353f9841c36e0c64aa9_9034&search_date=29102026&expected_price_uuid=01a18978-6ba7-8040-20ce-b68f97ec80cd&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=bPx_vxOleWvmY0AJ8RN0rg&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=111",
+   "discount": 0.047,
+   "link": "https://www.aviasales.com/search/TLV2812MXP05011?t=W417984841001798496400000265TLVMXP17991252001799142900000235MXPTLV_0391b3ca04dff536a34ed03db25463ee_8964&search_date=30102026&expected_price_uuid=01a18c31-35b4-8031-65ba-3d1ff74d0bf9&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=K4FRghUbZIZGZxp4Grz49w&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=111",
    "destinations": [
     {
      "name": "Finale Ligure",
@@ -359,9 +380,9 @@
    "price": 113.0,
    "airline": "W4",
    "flight": "6404",
-   "baseline": 117,
+   "baseline": 116,
    "basis": "history",
-   "discount": 0.034,
+   "discount": 0.03,
    "link": "https://www.aviasales.com/search/TLV2712MXP05011?t=W417983977001798410000000265TLVMXP17991252001799142900000235MXPTLV_d69e626800533d17b25416d67a00193b_9200&search_date=30102026&expected_price_uuid=01a18a45-cd12-8030-21aa-94df609f6399&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=MaaL4US8r250SmXh4UG5Qg&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=113",
    "destinations": [
     {
@@ -370,6 +391,28 @@
      "type": "trail",
      "transfer": "~1h15 (GOA)",
      "notes": "The enduro classic, shuttles run most of the year"
+    }
+   ]
+  },
+  {
+   "airport": "KRK",
+   "airport_name": "Krakow",
+   "depart": "2027-07-20",
+   "return": "2027-07-28",
+   "price": 308.0,
+   "airline": "W6",
+   "flight": "1998",
+   "baseline": 318,
+   "basis": "history",
+   "discount": 0.03,
+   "link": "https://www.aviasales.com/search/TLV2007KRK28071?t=W618161157001816125600000225TLVKRK18167532001816769400000210KRKTLV_4e9280da4deea63512e480f39ddac756_24809&search_date=27102026&expected_price_uuid=01a17d65-4d84-8030-efd5-011626ab5bf2&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=2eydioUtm-wuaDcupG9FwA&expected_price_source=share&expected_price_currency=usd&expected_price=308",
+   "destinations": [
+    {
+     "name": "Szczyrk",
+     "country": "Poland",
+     "type": "lift",
+     "transfer": "~1h-1h15 (KTW)",
+     "notes": "Your list"
     }
    ]
   },
@@ -484,28 +527,6 @@
    ]
   },
   {
-   "airport": "MXP",
-   "airport_name": "Milan Malpensa",
-   "depart": "2026-11-29",
-   "return": "2026-12-05",
-   "price": 111.0,
-   "airline": "W4",
-   "flight": "6404",
-   "baseline": 113,
-   "basis": "history",
-   "discount": 0.018,
-   "link": "https://www.aviasales.com/search/TLV2911MXP05121?t=W417959785001795990800000265TLVMXP17964468001796464500000235MXPTLV_6b8b7c10bdb86e4cf0adde13e9ad53c0_8951&search_date=29102026&expected_price_uuid=01a1860e-1c68-8030-2ba7-efce70dc12e4&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=rDPvoRi6fbPEt0-KVkjzGw&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=111",
-   "destinations": [
-    {
-     "name": "Finale Ligure",
-     "country": "Italy",
-     "type": "trail",
-     "transfer": "~1h15 (GOA)",
-     "notes": "The enduro classic, shuttles run most of the year"
-    }
-   ]
-  },
-  {
    "airport": "ZRH",
    "airport_name": "Zurich",
    "depart": "2027-06-04",
@@ -558,7 +579,7 @@
    "airline": "W4",
    "flight": "6434",
    "baseline": 216,
-   "basis": "today",
+   "basis": "history",
    "discount": 0.009,
    "link": "https://www.aviasales.com/search/TLV1306MXP19061?t=W418129129001812924600000255TLVMXP18133812001813398900000235MXPTLV_6feb128e5699ba7f0d0c5471cf297b76_17255&search_date=28102026&expected_price_uuid=01a18229-b721-8030-6edc-72b46ab05e38&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=_XoxhAgiWYl26VGKcyOCLw&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=214",
    "destinations": [
@@ -593,6 +614,72 @@
    ]
   },
   {
+   "airport": "FRA",
+   "airport_name": "Frankfurt",
+   "depart": "2027-05-20",
+   "return": "2027-05-28",
+   "price": 357.0,
+   "airline": "DE",
+   "flight": "4309",
+   "baseline": 358,
+   "basis": "history",
+   "discount": 0.003,
+   "link": "https://www.aviasales.com/search/TLV2005FRA28051?t=DE18107934001810806000000270TLVFRA18115149001811535000000275FRATLV_eef8f738927e13a4fd1e21839846e4bc_28995&search_date=30102026&expected_price_uuid=01a18b9d-e446-8031-255d-f287b4efff4b&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=1i_fSj1KzhDmgiG_t4F0xA&expected_price_source=share&expected_price_currency=usd&expected_price=357",
+   "destinations": [
+    {
+     "name": "Winterberg",
+     "country": "Germany",
+     "type": "lift",
+     "transfer": "~2h (DTM/DUS)",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "airport": "FRA",
+   "airport_name": "Frankfurt",
+   "depart": "2027-05-13",
+   "return": "2027-05-20",
+   "price": 359.0,
+   "airline": "DE",
+   "flight": "4309",
+   "baseline": 358,
+   "basis": "history",
+   "discount": -0.003,
+   "link": "https://www.aviasales.com/search/TLV1305FRA20051?t=DE18101886001810201200000270TLVFRA18108237001810843800000275FRATLV_465d1f94a64c3bc4efc2b450acc40eae_29137&search_date=30102026&expected_price_uuid=01a18b9f-3ed9-8030-6af4-d34a55ff6dd6&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=4CIZzv4KoLkNYKphbUkGRA&expected_price_source=share&expected_price_currency=usd&expected_price=359",
+   "destinations": [
+    {
+     "name": "Winterberg",
+     "country": "Germany",
+     "type": "lift",
+     "transfer": "~2h (DTM/DUS)",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "airport": "FRA",
+   "airport_name": "Frankfurt",
+   "depart": "2027-05-20",
+   "return": "2027-05-29",
+   "price": 359.0,
+   "airline": "DE",
+   "flight": "4309",
+   "baseline": 358,
+   "basis": "history",
+   "discount": -0.003,
+   "link": "https://www.aviasales.com/search/TLV2005FRA29051?t=DE18107934001810806000000270TLVFRA18116013001811621400000275FRATLV_e0cbf799c1d7dbf9e8276f31ff9f925d_29138&search_date=30102026&expected_price_uuid=01a18b9e-79ba-8031-613c-140183f0331b&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=GCoXDSMejdJKzb2NvdDDCQ&expected_price_source=share&expected_price_currency=usd&expected_price=359",
+   "destinations": [
+    {
+     "name": "Winterberg",
+     "country": "Germany",
+     "type": "lift",
+     "transfer": "~2h (DTM/DUS)",
+     "notes": ""
+    }
+   ]
+  },
+  {
    "airport": "BCN",
    "airport_name": "Barcelona",
    "depart": "2027-09-14",
@@ -600,9 +687,9 @@
    "price": 362.0,
    "airline": "LY",
    "flight": "393",
-   "baseline": 359,
+   "baseline": 360,
    "basis": "history",
-   "discount": -0.008,
+   "discount": -0.004,
    "link": "https://www.aviasales.com/search/TLV1409BCN21091?t=LY18209007001820913900000280TLVBCN18215661001821584400000245BCNTLV_246967ca2314ace7efc1c9d48aa24cc7_29148&search_date=29102026&expected_price_uuid=01a186c3-d9de-8031-6710-4d4cc6ec6e67&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=sdZzsW80BvjFBH1E5XLwXw&expected_price_source=share&expected_price_currency=usd&expected_price=362",
    "destinations": [
     {
@@ -611,6 +698,50 @@
      "type": "trail",
      "transfer": "~1h (GRO), ~1h30 (BCN)",
      "notes": "Mild winters, shuttle and trail riding"
+    }
+   ]
+  },
+  {
+   "airport": "SOF",
+   "airport_name": "Sofia",
+   "depart": "2027-07-02",
+   "return": "2027-07-10",
+   "price": 182.0,
+   "airline": "W6",
+   "flight": "4402",
+   "baseline": 181,
+   "basis": "history",
+   "discount": -0.006,
+   "link": "https://www.aviasales.com/search/TLV0207SOF10071?t=W618145194001814529600000170TLVSOF18151983001815207300000150SOFTLV_74707faa10c029f8d3188a4a660166e6_14708&search_date=30102026&expected_price_uuid=01a18c23-1029-8030-2774-d8ddf49df6ab&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=TmVWz-X2kgzWGAY5fUCqpw&expected_price_source=share&expected_price_currency=usd&expected_price=182",
+   "destinations": [
+    {
+     "name": "Bansko",
+     "country": "Bulgaria",
+     "type": "lift",
+     "transfer": "~2h-2h15",
+     "notes": "Often cheap flights"
+    }
+   ]
+  },
+  {
+   "airport": "MXP",
+   "airport_name": "Milan Malpensa",
+   "depart": "2027-01-29",
+   "return": "2027-02-02",
+   "price": 120.0,
+   "airline": "W4",
+   "flight": "6404",
+   "baseline": 119,
+   "basis": "history",
+   "discount": -0.008,
+   "link": "https://www.aviasales.com/search/TLV2901MXP02021?t=W418012489001801261200000265TLVMXP18015444001801562100000235MXPTLV_532ea131fdeb10e8e27fab4eb61e48d5_9711&search_date=30102026&expected_price_uuid=01a18eb0-5140-8040-299e-5d0792d0cca9&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=bPx_vxOleWvmY0AJ8RN0rg&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=120",
+   "destinations": [
+    {
+     "name": "Finale Ligure",
+     "country": "Italy",
+     "type": "trail",
+     "transfer": "~1h15 (GOA)",
+     "notes": "The enduro classic, shuttles run most of the year"
     }
    ]
   },
@@ -639,15 +770,15 @@
   {
    "airport": "MXP",
    "airport_name": "Milan Malpensa",
-   "depart": "2026-11-28",
-   "return": "2026-12-04",
+   "depart": "2026-11-29",
+   "return": "2026-12-05",
    "price": 114.0,
    "airline": "W4",
    "flight": "6404",
    "baseline": 113,
    "basis": "history",
    "discount": -0.009,
-   "link": "https://www.aviasales.com/search/TLV2811MXP04121?t=W417958921001795904400000265TLVMXP17963604001796378100000235MXPTLV_b1e3adc00a92919399938c6be619729f_9197&search_date=29102026&expected_price_uuid=01a1860d-f114-8030-a495-3d46f06dafdb&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=rDPvoRi6fbPEt0-KVkjzGw&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=114",
+   "link": "https://www.aviasales.com/search/TLV2911MXP05121?t=W417959785001795990800000265TLVMXP17964468001796464500000235MXPTLV_6b8b7c10bdb86e4cf0adde13e9ad53c0_9177&search_date=30102026&expected_price_uuid=01a18f13-d64d-8031-681f-ed9f627a389f&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=rDPvoRi6fbPEt0-KVkjzGw&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=114",
    "destinations": [
     {
      "name": "Finale Ligure",
@@ -689,7 +820,7 @@
    "airline": "W4",
    "flight": "6434",
    "baseline": 216,
-   "basis": "today",
+   "basis": "history",
    "discount": -0.009,
    "link": "https://www.aviasales.com/search/TLV1906MXP27061?t=W418134313001813443000000255TLVMXP18140931001814110200000225MXPTLV_75f0655eb1dbfa5929dededffd524989_17501&search_date=24102026&expected_price_uuid=01a16f6e-3ad8-8030-ef5a-d3cdb2922128&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=HPcv4BXkk-g9cmQe2fGnoA&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=218",
    "destinations": [
@@ -746,39 +877,61 @@
    ]
   },
   {
-   "airport": "MXP",
-   "airport_name": "Milan Malpensa",
-   "depart": "2027-04-13",
-   "return": "2027-04-17",
-   "price": 254.0,
-   "airline": "W4",
-   "flight": "6434",
-   "baseline": 250,
+   "airport": "FRA",
+   "airport_name": "Frankfurt",
+   "depart": "2027-04-07",
+   "return": "2027-04-11",
+   "price": 422.0,
+   "airline": "DE",
+   "flight": "4309",
+   "baseline": 417,
    "basis": "history",
-   "discount": -0.016,
-   "link": "https://www.aviasales.com/search/TLV1304MXP17041?t=W418076425001807654200000255TLVMXP18079380001807955700000235MXPTLV_5c9cbc8dcf71b8ee58c5cf77501ebf3f_20488&search_date=28102026&expected_price_uuid=01a181eb-66f5-8030-e240-f816480a1650&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=Hq2lWAMprReZGUYY7S-6oQ&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=254",
+   "discount": -0.012,
+   "link": "https://www.aviasales.com/search/TLV0704FRA11041?t=DE18070755001807088100000270TLVFRA18074541001807473900000270FRATLV_5c3fc92fa17d0e5105a000c60147098a_34060&search_date=26102026&expected_price_uuid=01a17a00-bf0d-8030-6a03-ae74d8354121&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=PdJ5zyLPWIhJfJFvFVZJMA&expected_price_source=share&expected_price_currency=usd&expected_price=422",
    "destinations": [
     {
-     "name": "Finale Ligure",
-     "country": "Italy",
-     "type": "trail",
-     "transfer": "~1h15 (GOA)",
-     "notes": "The enduro classic, shuttles run most of the year"
+     "name": "Winterberg",
+     "country": "Germany",
+     "type": "lift",
+     "transfer": "~2h (DTM/DUS)",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "airport": "FRA",
+   "airport_name": "Frankfurt",
+   "depart": "2027-05-01",
+   "return": "2027-05-15",
+   "price": 363.0,
+   "airline": "DE",
+   "flight": "4309",
+   "baseline": 358,
+   "basis": "history",
+   "discount": -0.014,
+   "link": "https://www.aviasales.com/search/TLV0105FRA15051?t=DE18091491001809161700000270TLVFRA18103917001810411500000270FRATLV_2da9a415a673581d62f0c09bc5f24e0d_29340&search_date=27102026&expected_price_uuid=01a17c04-5298-8030-e2cc-0da855838f1b&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=m1FLQ9esB4kHovEcwEYXAg&expected_price_source=share&expected_price_currency=usd&expected_price=363",
+   "destinations": [
+    {
+     "name": "Winterberg",
+     "country": "Germany",
+     "type": "lift",
+     "transfer": "~2h (DTM/DUS)",
+     "notes": ""
     }
    ]
   },
   {
    "airport": "MXP",
    "airport_name": "Milan Malpensa",
-   "depart": "2026-12-28",
-   "return": "2027-01-01",
+   "depart": "2027-02-19",
+   "return": "2027-02-25",
    "price": 119.0,
    "airline": "W4",
    "flight": "6404",
    "baseline": 117,
    "basis": "history",
    "discount": -0.017,
-   "link": "https://www.aviasales.com/search/TLV2812MXP01011?t=W417984841001798496400000265TLVMXP17987796001798797300000235MXPTLV_926267538f43e98e994b7be0a24988a3_9580&search_date=29102026&expected_price_uuid=01a18675-7653-8030-ef9e-8ea77deaa70a&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=bPx_vxOleWvmY0AJ8RN0rg&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=119",
+   "link": "https://www.aviasales.com/search/TLV1902MXP25021?t=W418030633001803075600000265TLVMXP18035607001803578400000235MXPTLV_d1896466eca503cc4daf9b253e877795_9629&search_date=30102026&expected_price_uuid=01a18d6e-11c5-8030-6d84-5dcf32f3d0a0&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ejtoFI1NqMZc63E9vVPLlw&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=119",
    "destinations": [
     {
      "name": "Finale Ligure",
@@ -792,15 +945,15 @@
   {
    "airport": "MXP",
    "airport_name": "Milan Malpensa",
-   "depart": "2027-01-13",
-   "return": "2027-01-20",
-   "price": 121.0,
+   "depart": "2027-04-13",
+   "return": "2027-04-17",
+   "price": 255.0,
    "airline": "W4",
-   "flight": "6404",
-   "baseline": 119,
+   "flight": "6434",
+   "baseline": 250,
    "basis": "history",
-   "discount": -0.017,
-   "link": "https://www.aviasales.com/search/TLV1301MXP20011?t=W417998665001799878800000265TLVMXP18004212001800438900000235MXPTLV_95cbb0abadc9ba678b48ea17331564e9_9853&search_date=29102026&expected_price_uuid=01a188aa-e93e-8030-6087-84ad0732f9af&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=GsCiaBixpyeWnZpzCorWHg&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=121",
+   "discount": -0.02,
+   "link": "https://www.aviasales.com/search/TLV1304MXP17041?t=W418076425001807654200000255TLVMXP18079380001807955700000235MXPTLV_5c9cbc8dcf71b8ee58c5cf77501ebf3f_20610&search_date=30102026&expected_price_uuid=01a18d93-e8fa-8031-6103-823a95b1f24f&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=Hq2lWAMprReZGUYY7S-6oQ&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=255",
    "destinations": [
     {
      "name": "Finale Ligure",
@@ -808,116 +961,6 @@
      "type": "trail",
      "transfer": "~1h15 (GOA)",
      "notes": "The enduro classic, shuttles run most of the year"
-    }
-   ]
-  },
-  {
-   "airport": "MXP",
-   "airport_name": "Milan Malpensa",
-   "depart": "2027-01-20",
-   "return": "2027-01-24",
-   "price": 121.0,
-   "airline": "W4",
-   "flight": "6404",
-   "baseline": 119,
-   "basis": "history",
-   "discount": -0.017,
-   "link": "https://www.aviasales.com/search/TLV2001MXP24011?t=W418004713001800483600000265TLVMXP18007668001800784500000235MXPTLV_d2de97ba45940ec53c78c33e9f20ddc0_9772&search_date=29102026&expected_price_uuid=01a1860e-989a-8030-a182-baa1c5448f5f&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=bPx_vxOleWvmY0AJ8RN0rg&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=121",
-   "destinations": [
-    {
-     "name": "Finale Ligure",
-     "country": "Italy",
-     "type": "trail",
-     "transfer": "~1h15 (GOA)",
-     "notes": "The enduro classic, shuttles run most of the year"
-    }
-   ]
-  },
-  {
-   "airport": "MXP",
-   "airport_name": "Milan Malpensa",
-   "depart": "2026-11-15",
-   "return": "2026-11-21",
-   "price": 115.0,
-   "airline": "W4",
-   "flight": "6404",
-   "baseline": 113,
-   "basis": "history",
-   "discount": -0.018,
-   "link": "https://www.aviasales.com/search/TLV1511MXP21111?t=W417947689001794781200000265TLVMXP17952372001795254900000235MXPTLV_93f076e7ae8974ca209fb8cfac7154f4_9279&search_date=29102026&expected_price_uuid=01a1860d-4226-8030-ef4c-ec0d3fb62922&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=rDPvoRi6fbPEt0-KVkjzGw&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=115",
-   "destinations": [
-    {
-     "name": "Finale Ligure",
-     "country": "Italy",
-     "type": "trail",
-     "transfer": "~1h15 (GOA)",
-     "notes": "The enduro classic, shuttles run most of the year"
-    }
-   ]
-  },
-  {
-   "airport": "MXP",
-   "airport_name": "Milan Malpensa",
-   "depart": "2026-11-23",
-   "return": "2026-11-28",
-   "price": 115.0,
-   "airline": "W4",
-   "flight": "6404",
-   "baseline": 113,
-   "basis": "history",
-   "discount": -0.018,
-   "link": "https://www.aviasales.com/search/TLV2311MXP28111?t=W417954601001795472400000265TLVMXP17958420001795859700000235MXPTLV_7b3ea25bd938385d5013a9d63f7130b0_9279&search_date=29102026&expected_price_uuid=01a1860d-75f0-8030-2d89-1d17dc332ce6&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=4jRQ3CLNfqtDB9-RnXQYHg&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=115",
-   "destinations": [
-    {
-     "name": "Finale Ligure",
-     "country": "Italy",
-     "type": "trail",
-     "transfer": "~1h15 (GOA)",
-     "notes": "The enduro classic, shuttles run most of the year"
-    }
-   ]
-  },
-  {
-   "airport": "MXP",
-   "airport_name": "Milan Malpensa",
-   "depart": "2027-03-18",
-   "return": "2027-03-21",
-   "price": 183.0,
-   "airline": "W4",
-   "flight": "6404",
-   "baseline": 179,
-   "basis": "history",
-   "discount": -0.022,
-   "link": "https://www.aviasales.com/search/TLV1803MXP21031?t=W418053961001805408400000265TLVMXP18056052001805622900000235MXPTLV_690ec01fa41ed1bfb0c8396f0d8abba1_14907&search_date=29102026&expected_price_uuid=01a1890d-3863-8040-a606-9feba6134f2b&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=BkL-EidzSnKZLW5RGKoOVg&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=183",
-   "destinations": [
-    {
-     "name": "Finale Ligure",
-     "country": "Italy",
-     "type": "trail",
-     "transfer": "~1h15 (GOA)",
-     "notes": "The enduro classic, shuttles run most of the year"
-    }
-   ]
-  },
-  {
-   "airport": "SOF",
-   "airport_name": "Sofia",
-   "depart": "2027-07-02",
-   "return": "2027-07-10",
-   "price": 185.0,
-   "airline": "W6",
-   "flight": "4404",
-   "baseline": 181,
-   "basis": "history",
-   "discount": -0.022,
-   "link": "https://www.aviasales.com/search/TLV0207SOF10071?t=W618145608001814571000000170TLVSOF18151983001815207300000150SOFTLV_79d9bec0b11796391ed022d9d4604c7e_14862&search_date=29102026&expected_price_uuid=01a186c6-0f4b-8030-6e98-772c43171ba2&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=OZetBt1VXL54-EowWpfSDA&expected_price_source=share&expected_price_currency=usd&expected_price=185",
-   "destinations": [
-    {
-     "name": "Bansko",
-     "country": "Bulgaria",
-     "type": "lift",
-     "transfer": "~2h-2h15",
-     "notes": "Often cheap flights"
     }
    ]
   },
@@ -946,28 +989,6 @@
   {
    "airport": "MXP",
    "airport_name": "Milan Malpensa",
-   "depart": "2026-12-28",
-   "return": "2027-01-05",
-   "price": 120.0,
-   "airline": "W4",
-   "flight": "6404",
-   "baseline": 117,
-   "basis": "history",
-   "discount": -0.026,
-   "link": "https://www.aviasales.com/search/TLV2812MXP05011?t=W417984841001798496400000265TLVMXP17991252001799142900000235MXPTLV_0391b3ca04dff536a34ed03db25463ee_9726&search_date=27102026&expected_price_uuid=01a17c4c-4c82-8030-e56d-7b31582dc1f1&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=K4FRghUbZIZGZxp4Grz49w&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=120",
-   "destinations": [
-    {
-     "name": "Finale Ligure",
-     "country": "Italy",
-     "type": "trail",
-     "transfer": "~1h15 (GOA)",
-     "notes": "The enduro classic, shuttles run most of the year"
-    }
-   ]
-  },
-  {
-   "airport": "MXP",
-   "airport_name": "Milan Malpensa",
    "depart": "2026-11-08",
    "return": "2026-11-19",
    "price": 116.0,
@@ -990,15 +1011,15 @@
   {
    "airport": "MXP",
    "airport_name": "Milan Malpensa",
-   "depart": "2026-11-14",
-   "return": "2026-11-17",
+   "depart": "2026-11-27",
+   "return": "2026-12-02",
    "price": 116.0,
    "airline": "W4",
    "flight": "6404",
    "baseline": 113,
    "basis": "history",
    "discount": -0.027,
-   "link": "https://www.aviasales.com/search/TLV1411MXP17111?t=W417946825001794694800000265TLVMXP17948916001794909300000235MXPTLV_1ec92f494a3191397cdc8ccf53dddc03_9361&search_date=29102026&expected_price_uuid=01a1860e-6d02-8030-62d5-da7c1f52ac7e&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=BkL-EidzSnKZLW5RGKoOVg&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=116",
+   "link": "https://www.aviasales.com/search/TLV2711MXP02121?t=W417958057001795818000000265TLVMXP17961876001796205300000235MXPTLV_ba4fe83f9087e02ad0608aef63fe35b8_9384&search_date=28102026&expected_price_uuid=01a181d7-ace6-8030-2152-76103c9bd6e0&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=4jRQ3CLNfqtDB9-RnXQYHg&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=116",
    "destinations": [
     {
      "name": "Finale Ligure",
@@ -1012,15 +1033,15 @@
   {
    "airport": "MXP",
    "airport_name": "Milan Malpensa",
-   "depart": "2026-11-21",
-   "return": "2026-11-24",
+   "depart": "2026-11-24",
+   "return": "2026-12-03",
    "price": 116.0,
    "airline": "W4",
    "flight": "6404",
    "baseline": 113,
    "basis": "history",
    "discount": -0.027,
-   "link": "https://www.aviasales.com/search/TLV2111MXP24111?t=W417952873001795299600000265TLVMXP17954964001795514100000235MXPTLV_2e24d68e5cc0fbca419a1f9b69d527d4_9361&search_date=29102026&expected_price_uuid=01a1860d-d1a1-8030-2d24-89473e27d1d2&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=BkL-EidzSnKZLW5RGKoOVg&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=116",
+   "link": "https://www.aviasales.com/search/TLV2411MXP03121?t=W417955465001795558800000265TLVMXP17962740001796291700000235MXPTLV_9ed47a19fe90f5caa5e3af4580974245_9367&search_date=29102026&expected_price_uuid=01a1878e-017f-8030-27a3-2c9d6be13d22&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=MaaL4US8r250SmXh4UG5Qg&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=116",
    "destinations": [
     {
      "name": "Finale Ligure",
@@ -1032,46 +1053,134 @@
    ]
   },
   {
-   "airport": "MXP",
-   "airport_name": "Milan Malpensa",
-   "depart": "2026-11-15",
-   "return": "2026-11-19",
-   "price": 116.0,
-   "airline": "W4",
-   "flight": "6404",
-   "baseline": 113,
-   "basis": "history",
-   "discount": -0.027,
-   "link": "https://www.aviasales.com/search/TLV1511MXP19111?t=W417947689001794781200000265TLVMXP17950644001795082100000235MXPTLV_4bf8e3be9b57ac0a1dd9ee926345f214_9360&search_date=23102026&expected_price_uuid=01a16895-f966-8031-69c1-9d7c7a185bef&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=bPx_vxOleWvmY0AJ8RN0rg&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=116",
-   "destinations": [
-    {
-     "name": "Finale Ligure",
-     "country": "Italy",
-     "type": "trail",
-     "transfer": "~1h15 (GOA)",
-     "notes": "The enduro classic, shuttles run most of the year"
-    }
-   ]
-  },
-  {
-   "airport": "FRA",
-   "airport_name": "Frankfurt",
-   "depart": "2027-04-07",
-   "return": "2027-04-11",
-   "price": 422.0,
-   "airline": "DE",
-   "flight": "4309",
-   "baseline": 409,
+   "airport": "MUC",
+   "airport_name": "Munich",
+   "depart": "2027-09-14",
+   "return": "2027-09-21",
+   "price": 432.0,
+   "airline": "LY",
+   "flight": "353",
+   "baseline": 418,
    "basis": "history",
    "discount": -0.032,
-   "link": "https://www.aviasales.com/search/TLV0704FRA11041?t=DE18070755001807088100000270TLVFRA18074541001807473900000270FRATLV_5c3fc92fa17d0e5105a000c60147098a_34060&search_date=26102026&expected_price_uuid=01a17a00-bf0d-8030-6a03-ae74d8354121&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=PdJ5zyLPWIhJfJFvFVZJMA&expected_price_source=share&expected_price_currency=usd&expected_price=422",
+   "link": "https://www.aviasales.com/search/TLV1409MUC21091?t=LY18209016001820912700000245TLVMUC18215220001821539100000225MUCTLV_23875f5798c3b6650d04abcc2ea2d018_34848&search_date=26102026&expected_price_uuid=01a177ac-a49c-8031-6423-91726fe7f78d&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=77jSTUYOiD_aLuYRWqZDnA&expected_price_source=share&expected_price_currency=usd&expected_price=432",
    "destinations": [
     {
-     "name": "Winterberg",
-     "country": "Germany",
+     "name": "Leogang - Saalbach-Hinterglemm",
+     "country": "Austria",
      "type": "lift",
-     "transfer": "~2h (DTM/DUS)",
-     "notes": ""
+     "transfer": "~1h (SZG), ~2h (MUC)",
+     "notes": "Top-tier park, Leogang and Saalbach on one area"
+    }
+   ]
+  },
+  {
+   "airport": "MUC",
+   "airport_name": "Munich",
+   "depart": "2027-09-15",
+   "return": "2027-09-22",
+   "price": 432.0,
+   "airline": "LY",
+   "flight": "351",
+   "baseline": 418,
+   "basis": "history",
+   "discount": -0.032,
+   "link": "https://www.aviasales.com/search/TLV1509MUC22091?t=LY18210231001821034200000245TLVMUC18216084001821625500000225MUCTLV_249be7f7f352d651102da67332b7932b_34848&search_date=26102026&expected_price_uuid=01a177af-681d-8030-60ef-8a4f6a4ee734&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=IrGc8Jm_05_txePRENluLA&expected_price_source=share&expected_price_currency=usd&expected_price=432",
+   "destinations": [
+    {
+     "name": "Leogang - Saalbach-Hinterglemm",
+     "country": "Austria",
+     "type": "lift",
+     "transfer": "~1h (SZG), ~2h (MUC)",
+     "notes": "Top-tier park, Leogang and Saalbach on one area"
+    }
+   ]
+  },
+  {
+   "airport": "MUC",
+   "airport_name": "Munich",
+   "depart": "2027-09-16",
+   "return": "2027-09-23",
+   "price": 432.0,
+   "airline": "LY",
+   "flight": "353",
+   "baseline": 418,
+   "basis": "history",
+   "discount": -0.032,
+   "link": "https://www.aviasales.com/search/TLV1609MUC23091?t=LY18210744001821085500000245TLVMUC18216948001821711900000225MUCTLV_effe6f50d1b856039bb1ac86714aa525_34848&search_date=26102026&expected_price_uuid=01a177ae-3a5b-8030-6fae-6425d9ebe941&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=77jSTUYOiD_aLuYRWqZDnA&expected_price_source=share&expected_price_currency=usd&expected_price=432",
+   "destinations": [
+    {
+     "name": "Leogang - Saalbach-Hinterglemm",
+     "country": "Austria",
+     "type": "lift",
+     "transfer": "~1h (SZG), ~2h (MUC)",
+     "notes": "Top-tier park, Leogang and Saalbach on one area"
+    }
+   ]
+  },
+  {
+   "airport": "MXP",
+   "airport_name": "Milan Malpensa",
+   "depart": "2027-01-11",
+   "return": "2027-01-14",
+   "price": 123.0,
+   "airline": "W4",
+   "flight": "6404",
+   "baseline": 119,
+   "basis": "history",
+   "discount": -0.034,
+   "link": "https://www.aviasales.com/search/TLV1101MXP14011?t=W417996937001799706000000265TLVMXP17999028001799920500000235MXPTLV_175751113c44c32d39516513515a83b2_9912&search_date=30102026&expected_price_uuid=01a18f16-e25b-8031-24af-735ad87b68ae&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=BkL-EidzSnKZLW5RGKoOVg&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=123",
+   "destinations": [
+    {
+     "name": "Finale Ligure",
+     "country": "Italy",
+     "type": "trail",
+     "transfer": "~1h15 (GOA)",
+     "notes": "The enduro classic, shuttles run most of the year"
+    }
+   ]
+  },
+  {
+   "airport": "MXP",
+   "airport_name": "Milan Malpensa",
+   "depart": "2026-11-08",
+   "return": "2026-11-18",
+   "price": 117.0,
+   "airline": "W4",
+   "flight": "6404",
+   "baseline": 113,
+   "basis": "history",
+   "discount": -0.035,
+   "link": "https://www.aviasales.com/search/TLV0811MXP18111?t=W417941641001794176400000265TLVMXP17949780001794995700000235MXPTLV_335c2e545562bfd65e17002b6c6579a8_9443&search_date=28102026&expected_price_uuid=01a183a0-8b77-8031-649b-d7bdcfdd27e7&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=3nHNDOMq7hABuBeOmKA2tA&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=117",
+   "destinations": [
+    {
+     "name": "Finale Ligure",
+     "country": "Italy",
+     "type": "trail",
+     "transfer": "~1h15 (GOA)",
+     "notes": "The enduro classic, shuttles run most of the year"
+    }
+   ]
+  },
+  {
+   "airport": "MXP",
+   "airport_name": "Milan Malpensa",
+   "depart": "2026-11-13",
+   "return": "2026-11-17",
+   "price": 117.0,
+   "airline": "W4",
+   "flight": "6404",
+   "baseline": 113,
+   "basis": "history",
+   "discount": -0.035,
+   "link": "https://www.aviasales.com/search/TLV1311MXP17111?t=W417945961001794608400000265TLVMXP17948916001794909300000235MXPTLV_b53afee489775ab0f30dbf5e60abcf5e_9423&search_date=30102026&expected_price_uuid=01a18f14-16e3-8030-2830-dbd8b36117c3&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=bPx_vxOleWvmY0AJ8RN0rg&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=117",
+   "destinations": [
+    {
+     "name": "Finale Ligure",
+     "country": "Italy",
+     "type": "trail",
+     "transfer": "~1h15 (GOA)",
+     "notes": "The enduro classic, shuttles run most of the year"
     }
    ]
   },
@@ -1098,24 +1207,24 @@
    ]
   },
   {
-   "airport": "MUC",
-   "airport_name": "Munich",
-   "depart": "2027-09-18",
-   "return": "2027-09-25",
-   "price": 448.0,
-   "airline": "LH",
-   "flight": "683",
-   "baseline": 432,
+   "airport": "MXP",
+   "airport_name": "Milan Malpensa",
+   "depart": "2027-04-19",
+   "return": "2027-04-22",
+   "price": 259.0,
+   "airline": "W4",
+   "flight": "6436",
+   "baseline": 250,
    "basis": "history",
-   "discount": -0.037,
-   "link": "https://www.aviasales.com/search/TLV1809MUC25091?t=LH18212508001821262200000250TLVMUC18218706001821888000000230MUCTLV_544b177ae26f8ef8b274b9fae9dd1905_36154&search_date=26102026&expected_price_uuid=01a177ae-dbb6-8030-27de-9633a349c314&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=LPuSwg6S0FCIyVf9qIXZAw&expected_price_source=share&expected_price_currency=usd&expected_price=448",
+   "discount": -0.036,
+   "link": "https://www.aviasales.com/search/TLV1904MXP22041?t=W418081723001808184000000255TLVMXP18083700001808387700000235MXPTLV_314068c49b5e1fc4cb0b1b9dded69b3b_20895&search_date=29102026&expected_price_uuid=01a187ca-d386-8030-e303-12a1451a0957&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=wLKlTDd6uwAMCbqJZqfOaA&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=259",
    "destinations": [
     {
-     "name": "Leogang - Saalbach-Hinterglemm",
-     "country": "Austria",
-     "type": "lift",
-     "transfer": "~1h (SZG), ~2h (MUC)",
-     "notes": "Top-tier park, Leogang and Saalbach on one area"
+     "name": "Finale Ligure",
+     "country": "Italy",
+     "type": "trail",
+     "transfer": "~1h15 (GOA)",
+     "notes": "The enduro classic, shuttles run most of the year"
     }
    ]
   },
@@ -1138,6 +1247,28 @@
      "type": "lift",
      "transfer": "verify (~1h45-2h)",
      "notes": "Your list, check transfer from airport"
+    }
+   ]
+  },
+  {
+   "airport": "MXP",
+   "airport_name": "Milan Malpensa",
+   "depart": "2026-12-29",
+   "return": "2027-01-04",
+   "price": 121.0,
+   "airline": "W4",
+   "flight": "6404",
+   "baseline": 116,
+   "basis": "history",
+   "discount": -0.039,
+   "link": "https://www.aviasales.com/search/TLV2912MXP04011?t=W417985705001798582800000265TLVMXP17990388001799056500000235MXPTLV_96461bc927c5b5588caa28b748322dd8_9742&search_date=30102026&expected_price_uuid=01a18c6a-bcaf-8031-689e-c2c925cd20cc&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=rDPvoRi6fbPEt0-KVkjzGw&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=121",
+   "destinations": [
+    {
+     "name": "Finale Ligure",
+     "country": "Italy",
+     "type": "trail",
+     "transfer": "~1h15 (GOA)",
+     "notes": "The enduro classic, shuttles run most of the year"
     }
    ]
   },
@@ -1208,50 +1339,6 @@
    ]
   },
   {
-   "airport": "FRA",
-   "airport_name": "Frankfurt",
-   "depart": "2027-05-20",
-   "return": "2027-05-27",
-   "price": 358.0,
-   "airline": "DE",
-   "flight": "4309",
-   "baseline": 342,
-   "basis": "history",
-   "discount": -0.045,
-   "link": "https://www.aviasales.com/search/TLV2005FRA27051?t=DE18107934001810806000000270TLVFRA18114285001811448600000275FRATLV_adaebb20463ef8db4ba2914f4d2f59c0_28797&search_date=29102026&expected_price_uuid=01a186ba-9be2-8030-a430-a77bd9d84f41&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=4CIZzv4KoLkNYKphbUkGRA&expected_price_source=share&expected_price_currency=usd&expected_price=358",
-   "destinations": [
-    {
-     "name": "Winterberg",
-     "country": "Germany",
-     "type": "lift",
-     "transfer": "~2h (DTM/DUS)",
-     "notes": ""
-    }
-   ]
-  },
-  {
-   "airport": "KRK",
-   "airport_name": "Krakow",
-   "depart": "2027-07-19",
-   "return": "2027-07-27",
-   "price": 344.0,
-   "airline": "W6",
-   "flight": "1996",
-   "baseline": 327,
-   "basis": "history",
-   "discount": -0.052,
-   "link": "https://www.aviasales.com/search/TLV1907KRK27071?t=W618159951001816005000000225TLVKRK18166668001816683000000210KRKTLV_65221452d246ec02deaef8577f865464_27711&search_date=28102026&expected_price_uuid=01a1822f-3f00-8030-6098-881b9b27828d&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=XdLBW5tlOUDxtrlA7081Dg&expected_price_source=share&expected_price_currency=usd&expected_price=344",
-   "destinations": [
-    {
-     "name": "Szczyrk",
-     "country": "Poland",
-     "type": "lift",
-     "transfer": "~1h-1h15 (KTW)",
-     "notes": "Your list"
-    }
-   ]
-  },
-  {
    "airport": "BCN",
    "airport_name": "Barcelona",
    "depart": "2027-03-09",
@@ -1270,28 +1357,6 @@
      "type": "trail",
      "transfer": "~1h (GRO), ~1h30 (BCN)",
      "notes": "Mild winters, shuttle and trail riding"
-    }
-   ]
-  },
-  {
-   "airport": "FRA",
-   "airport_name": "Frankfurt",
-   "depart": "2027-05-01",
-   "return": "2027-05-15",
-   "price": 363.0,
-   "airline": "DE",
-   "flight": "4309",
-   "baseline": 342,
-   "basis": "history",
-   "discount": -0.06,
-   "link": "https://www.aviasales.com/search/TLV0105FRA15051?t=DE18091491001809161700000270TLVFRA18103917001810411500000270FRATLV_2da9a415a673581d62f0c09bc5f24e0d_29340&search_date=27102026&expected_price_uuid=01a17c04-5298-8030-e2cc-0da855838f1b&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=m1FLQ9esB4kHovEcwEYXAg&expected_price_source=share&expected_price_currency=usd&expected_price=363",
-   "destinations": [
-    {
-     "name": "Winterberg",
-     "country": "Germany",
-     "type": "lift",
-     "transfer": "~2h (DTM/DUS)",
-     "notes": ""
     }
    ]
   },
@@ -1340,24 +1405,46 @@
    ]
   },
   {
-   "airport": "FRA",
-   "airport_name": "Frankfurt",
-   "depart": "2027-07-01",
-   "return": "2027-07-11",
-   "price": 579.0,
-   "airline": "LY",
-   "flight": "355",
-   "baseline": 538,
+   "airport": "MUC",
+   "airport_name": "Munich",
+   "depart": "2027-09-18",
+   "return": "2027-09-25",
+   "price": 448.0,
+   "airline": "LH",
+   "flight": "683",
+   "baseline": 418,
    "basis": "history",
-   "discount": -0.076,
-   "link": "https://www.aviasales.com/search/TLV0107FRA11071?t=LY18144540001814466900000275TLVFRA18153033001815321600000245FRATLV_0ba9184e683763757c1df6476efc3f4f_46744&search_date=27102026&expected_price_uuid=01a17d22-e705-8031-60b3-2eb28d67c744&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=eKCCIxEZDQPFItJhcSTX8w&expected_price_source=share&expected_price_currency=usd&expected_price=579",
+   "discount": -0.07,
+   "link": "https://www.aviasales.com/search/TLV1809MUC25091?t=LH18212508001821262200000250TLVMUC18218706001821888000000230MUCTLV_544b177ae26f8ef8b274b9fae9dd1905_36154&search_date=26102026&expected_price_uuid=01a177ae-dbb6-8030-27de-9633a349c314&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=LPuSwg6S0FCIyVf9qIXZAw&expected_price_source=share&expected_price_currency=usd&expected_price=448",
    "destinations": [
     {
-     "name": "Winterberg",
-     "country": "Germany",
+     "name": "Leogang - Saalbach-Hinterglemm",
+     "country": "Austria",
      "type": "lift",
-     "transfer": "~2h (DTM/DUS)",
-     "notes": ""
+     "transfer": "~1h (SZG), ~2h (MUC)",
+     "notes": "Top-tier park, Leogang and Saalbach on one area"
+    }
+   ]
+  },
+  {
+   "airport": "BCN",
+   "airport_name": "Barcelona",
+   "depart": "2027-01-24",
+   "return": "2027-01-28",
+   "price": 381.0,
+   "airline": "BZ",
+   "flight": "54",
+   "baseline": 352,
+   "basis": "history",
+   "discount": -0.082,
+   "link": "https://www.aviasales.com/search/TLV2401BCN28011?t=BZ18007851001800798300000280TLVBCN18011475001801166400000255BCNTLV_4fcd44a3dfd7fea2a8bd59d7a3b055d3_30747&search_date=26102026&expected_price_uuid=01a1778d-5431-8030-a4be-477108121019&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ujRAdWQ-axTDY5jPGomaFg&expected_price_source=share&expected_price_currency=usd&expected_price=381",
+   "destinations": [
+    {
+     "name": "Girona",
+     "country": "Spain",
+     "type": "trail",
+     "transfer": "~1h (GRO), ~1h30 (BCN)",
+     "notes": "Mild winters, shuttle and trail riding"
     }
    ]
   },
@@ -1384,24 +1471,46 @@
    ]
   },
   {
-   "airport": "BCN",
-   "airport_name": "Barcelona",
-   "depart": "2027-01-24",
-   "return": "2027-01-28",
-   "price": 381.0,
-   "airline": "BZ",
-   "flight": "54",
-   "baseline": 351,
+   "airport": "KRK",
+   "airport_name": "Krakow",
+   "depart": "2027-07-19",
+   "return": "2027-07-27",
+   "price": 344.0,
+   "airline": "W6",
+   "flight": "1996",
+   "baseline": 318,
    "basis": "history",
-   "discount": -0.085,
-   "link": "https://www.aviasales.com/search/TLV2401BCN28011?t=BZ18007851001800798300000280TLVBCN18011475001801166400000255BCNTLV_4fcd44a3dfd7fea2a8bd59d7a3b055d3_30747&search_date=26102026&expected_price_uuid=01a1778d-5431-8030-a4be-477108121019&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ujRAdWQ-axTDY5jPGomaFg&expected_price_source=share&expected_price_currency=usd&expected_price=381",
+   "discount": -0.083,
+   "link": "https://www.aviasales.com/search/TLV1907KRK27071?t=W618159951001816005000000225TLVKRK18166668001816683000000210KRKTLV_65221452d246ec02deaef8577f865464_27711&search_date=28102026&expected_price_uuid=01a1822f-3f00-8030-6098-881b9b27828d&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=XdLBW5tlOUDxtrlA7081Dg&expected_price_source=share&expected_price_currency=usd&expected_price=344",
    "destinations": [
     {
-     "name": "Girona",
-     "country": "Spain",
-     "type": "trail",
-     "transfer": "~1h (GRO), ~1h30 (BCN)",
-     "notes": "Mild winters, shuttle and trail riding"
+     "name": "Szczyrk",
+     "country": "Poland",
+     "type": "lift",
+     "transfer": "~1h-1h15 (KTW)",
+     "notes": "Your list"
+    }
+   ]
+  },
+  {
+   "airport": "FRA",
+   "airport_name": "Frankfurt",
+   "depart": "2027-04-18",
+   "return": "2027-04-25",
+   "price": 452.0,
+   "airline": "DE",
+   "flight": "4309",
+   "baseline": 417,
+   "basis": "history",
+   "discount": -0.084,
+   "link": "https://www.aviasales.com/search/TLV1804FRA25041?t=DE18080286001808041200000270TLVFRA18086637001808683800000275FRATLV_03cbeac8f7bf62a46286cc7dd373bce9_36431&search_date=30102026&expected_price_uuid=01a18c53-7ec2-8030-2253-c7337a1adbfe&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=4CIZzv4KoLkNYKphbUkGRA&expected_price_source=share&expected_price_currency=usd&expected_price=452",
+   "destinations": [
+    {
+     "name": "Winterberg",
+     "country": "Germany",
+     "type": "lift",
+     "transfer": "~2h (DTM/DUS)",
+     "notes": ""
     }
    ]
   },
@@ -1472,24 +1581,24 @@
    ]
   },
   {
-   "airport": "KRK",
-   "airport_name": "Krakow",
-   "depart": "2027-07-19",
-   "return": "2027-07-28",
-   "price": 360.0,
-   "airline": "W6",
-   "flight": "1996",
-   "baseline": 327,
+   "airport": "BCN",
+   "airport_name": "Barcelona",
+   "depart": "2026-11-05",
+   "return": "2026-11-09",
+   "price": 318.0,
+   "airline": "BZ",
+   "flight": "252",
+   "baseline": 288,
    "basis": "history",
-   "discount": -0.101,
-   "link": "https://www.aviasales.com/search/TLV1907KRK28071?t=W618159951001816005000000225TLVKRK18167532001816769400000210KRKTLV_61babda1c59aaa48400c63f2da591db5_28980&search_date=28102026&expected_price_uuid=01a18188-1c84-8031-6737-0a99e1f69c28&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=pODFSVnZhGX_wqOZUtN0LA&expected_price_source=share&expected_price_currency=usd&expected_price=360",
+   "discount": -0.104,
+   "link": "https://www.aviasales.com/search/TLV0511BCN09111?t=BZ17938731001793886300000280TLVBCN17942355001794254400000255BCNTLV_f1cb00cfffbeadfeed6dedb73e1cf28c_25783&search_date=30102026&expected_price_uuid=01a18c16-38e4-8031-20d7-7658927eeadd&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ujRAdWQ-axTDY5jPGomaFg&expected_price_source=share&expected_price_currency=usd&expected_price=318",
    "destinations": [
     {
-     "name": "Szczyrk",
-     "country": "Poland",
-     "type": "lift",
-     "transfer": "~1h-1h15 (KTW)",
-     "notes": "Your list"
+     "name": "Girona",
+     "country": "Spain",
+     "type": "trail",
+     "transfer": "~1h (GRO), ~1h30 (BCN)",
+     "notes": "Mild winters, shuttle and trail riding"
     }
    ]
   },
@@ -1540,15 +1649,15 @@
   {
    "airport": "BCN",
    "airport_name": "Barcelona",
-   "depart": "2027-01-04",
-   "return": "2027-01-09",
-   "price": 392.0,
-   "airline": "BZ",
-   "flight": "252",
-   "baseline": 351,
+   "depart": "2026-11-29",
+   "return": "2026-12-03",
+   "price": 321.0,
+   "airline": "IZ",
+   "flight": "271",
+   "baseline": 288,
    "basis": "history",
-   "discount": -0.117,
-   "link": "https://www.aviasales.com/search/TLV0401BCN09011?t=BZ17990571001799070300000280TLVBCN17995350001799553600000250BCNTLV_e07d5b89303c92ab817089179d66b20d_31571&search_date=27102026&expected_price_uuid=01a17d64-c026-8030-a363-232b5c00de48&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=78MQhm8F_Mr_rr9L9PSQ3w&expected_price_source=share&expected_price_currency=usd&expected_price=392",
+   "discount": -0.115,
+   "link": "https://www.aviasales.com/search/TLV2911BCN03121?t=IZ17959665001795979700000280TLVBCN17963091001796328000000255BCNTLV_02633d430036aa6d953dae7125284057_25921&search_date=30102026&expected_price_uuid=01a18da1-2690-8030-671d-43ebda6cfa48&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=wd3TXgn1nFbvowBjIjlSgw&expected_price_source=share&expected_price_currency=usd&expected_price=321",
    "destinations": [
     {
      "name": "Girona",
@@ -1560,24 +1669,24 @@
    ]
   },
   {
-   "airport": "VIE",
-   "airport_name": "Vienna",
-   "depart": "2027-06-25",
-   "return": "2027-06-30",
-   "price": 341.0,
-   "airline": "OS",
-   "flight": "0082",
-   "baseline": 305,
+   "airport": "BCN",
+   "airport_name": "Barcelona",
+   "depart": "2027-04-07",
+   "return": "2027-04-11",
+   "price": 446.0,
+   "airline": "LY",
+   "flight": "391",
+   "baseline": 398,
    "basis": "history",
-   "discount": -0.118,
-   "link": "https://www.aviasales.com/search/TLV2506VIE30061?t=OS18139488001813958700000225TLVVIE18143868001814402700000205VIETLV_d545ee1198b6881143dd27970ae12cb2_27937&search_date=23102026&expected_price_uuid=01a16767-35d7-8030-2004-6c2425c4a214&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=SfMu1AiSx-1dAGnFtJY_zQ&expected_price_source=share&expected_price_currency=usd&expected_price=341",
+   "discount": -0.119,
+   "link": "https://www.aviasales.com/search/TLV0704BCN11041?t=LY18071199001807133100000280TLVBCN18074040001807422300000245BCNTLV_e96b2c788cfe18cc3cd67d2c34fba530_36051&search_date=26102026&expected_price_uuid=01a179ee-110e-8030-adaa-c3dad0a153ef&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=gidfBo_Vofjp4H_gfDTNcA&expected_price_source=share&expected_price_currency=usd&expected_price=446",
    "destinations": [
     {
-     "name": "Kalnica Bike Park",
-     "country": "Slovakia",
-     "type": "lift",
-     "transfer": "verify (~1h45-2h)",
-     "notes": "Your list, check transfer from airport"
+     "name": "Girona",
+     "country": "Spain",
+     "type": "trail",
+     "transfer": "~1h (GRO), ~1h30 (BCN)",
+     "notes": "Mild winters, shuttle and trail riding"
     }
    ]
   },
@@ -1633,9 +1742,9 @@
    "price": 397.0,
    "airline": "BZ",
    "flight": "252",
-   "baseline": 351,
+   "baseline": 352,
    "basis": "history",
-   "discount": -0.131,
+   "discount": -0.128,
    "link": "https://www.aviasales.com/search/TLV1701BCN21011?t=BZ18001803001800193500000280TLVBCN18005427001800561600000255BCNTLV_e8c7f3d96081182562efde64f2958cc3_32009&search_date=29102026&expected_price_uuid=01a187ff-3223-8030-648c-95a7e3a377c7&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ujRAdWQ-axTDY5jPGomaFg&expected_price_source=share&expected_price_currency=usd&expected_price=397",
    "destinations": [
     {
@@ -1648,17 +1757,39 @@
    ]
   },
   {
+   "airport": "KRK",
+   "airport_name": "Krakow",
+   "depart": "2027-07-19",
+   "return": "2027-07-28",
+   "price": 360.0,
+   "airline": "W6",
+   "flight": "1996",
+   "baseline": 318,
+   "basis": "history",
+   "discount": -0.134,
+   "link": "https://www.aviasales.com/search/TLV1907KRK28071?t=W618159951001816005000000225TLVKRK18167532001816769400000210KRKTLV_61babda1c59aaa48400c63f2da591db5_28980&search_date=28102026&expected_price_uuid=01a18188-1c84-8031-6737-0a99e1f69c28&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=pODFSVnZhGX_wqOZUtN0LA&expected_price_source=share&expected_price_currency=usd&expected_price=360",
+   "destinations": [
+    {
+     "name": "Szczyrk",
+     "country": "Poland",
+     "type": "lift",
+     "transfer": "~1h-1h15 (KTW)",
+     "notes": "Your list"
+    }
+   ]
+  },
+  {
    "airport": "BCN",
    "airport_name": "Barcelona",
-   "depart": "2026-11-15",
-   "return": "2026-11-19",
-   "price": 327.0,
-   "airline": "IZ",
-   "flight": "271",
-   "baseline": 288,
+   "depart": "2027-01-10",
+   "return": "2027-01-14",
+   "price": 399.0,
+   "airline": "BZ",
+   "flight": "252",
+   "baseline": 352,
    "basis": "history",
-   "discount": -0.135,
-   "link": "https://www.aviasales.com/search/TLV1511BCN19111?t=IZ17947569001794770100000280TLVBCN17950968001795115400000250BCNTLV_b305de2ad67a5481b2e113025068fea9_26352&search_date=23102026&expected_price_uuid=01a1695c-e6ca-8030-e192-aaf5b232c4b7&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=OpbMF85spfNUoNZjWxijjA&expected_price_source=share&expected_price_currency=usd&expected_price=327",
+   "discount": -0.134,
+   "link": "https://www.aviasales.com/search/TLV1001BCN14011?t=BZ17995755001799588700000280TLVBCN17999379001799956800000255BCNTLV_73f3c5c9073476e943f60f9a41314a5f_32024&search_date=25102026&expected_price_uuid=01a17231-5f5c-8031-22b4-d83b7e5fce65&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ujRAdWQ-axTDY5jPGomaFg&expected_price_source=share&expected_price_currency=usd&expected_price=399",
    "destinations": [
     {
      "name": "Girona",
@@ -1694,15 +1825,15 @@
   {
    "airport": "BCN",
    "airport_name": "Barcelona",
-   "depart": "2027-01-10",
-   "return": "2027-01-14",
-   "price": 399.0,
+   "depart": "2027-01-25",
+   "return": "2027-01-28",
+   "price": 401.0,
    "airline": "BZ",
-   "flight": "252",
-   "baseline": 351,
+   "flight": "54",
+   "baseline": 352,
    "basis": "history",
-   "discount": -0.137,
-   "link": "https://www.aviasales.com/search/TLV1001BCN14011?t=BZ17995755001799588700000280TLVBCN17999379001799956800000255BCNTLV_73f3c5c9073476e943f60f9a41314a5f_32024&search_date=25102026&expected_price_uuid=01a17231-5f5c-8031-22b4-d83b7e5fce65&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ujRAdWQ-axTDY5jPGomaFg&expected_price_source=share&expected_price_currency=usd&expected_price=399",
+   "discount": -0.139,
+   "link": "https://www.aviasales.com/search/TLV2501BCN28011?t=BZ18008715001800884700000280TLVBCN18011475001801166400000255BCNTLV_6b81476a696189cca2cf6c7e34b6e72a_32231&search_date=25102026&expected_price_uuid=01a17064-93a5-8040-6107-10f7a2ae0941&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=9I6u2P09uf_F_j0VVqipuA&expected_price_source=share&expected_price_currency=usd&expected_price=401",
    "destinations": [
     {
      "name": "Girona",
@@ -1716,15 +1847,15 @@
   {
    "airport": "BCN",
    "airport_name": "Barcelona",
-   "depart": "2027-01-25",
-   "return": "2027-01-28",
-   "price": 401.0,
+   "depart": "2026-12-13",
+   "return": "2026-12-17",
+   "price": 347.0,
    "airline": "BZ",
-   "flight": "54",
-   "baseline": 351,
+   "flight": "252",
+   "baseline": 303,
    "basis": "history",
-   "discount": -0.142,
-   "link": "https://www.aviasales.com/search/TLV2501BCN28011?t=BZ18008715001800884700000280TLVBCN18011475001801166400000255BCNTLV_6b81476a696189cca2cf6c7e34b6e72a_32231&search_date=25102026&expected_price_uuid=01a17064-93a5-8040-6107-10f7a2ae0941&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=9I6u2P09uf_F_j0VVqipuA&expected_price_source=share&expected_price_currency=usd&expected_price=401",
+   "discount": -0.145,
+   "link": "https://www.aviasales.com/search/TLV1312BCN17121?t=BZ17971563001797169500000280TLVBCN17975160001797534600000250BCNTLV_1fcf01fbc51cfe31e8bf1e6f43607f53_28230&search_date=30102026&expected_price_uuid=01a18be9-6a83-8030-2937-2b54656ff3bd&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=jrDkuxDM62ueEBPznPX7iQ&expected_price_source=share&expected_price_currency=usd&expected_price=347",
    "destinations": [
     {
      "name": "Girona",
@@ -1732,28 +1863,6 @@
      "type": "trail",
      "transfer": "~1h (GRO), ~1h30 (BCN)",
      "notes": "Mild winters, shuttle and trail riding"
-    }
-   ]
-  },
-  {
-   "airport": "KRK",
-   "airport_name": "Krakow",
-   "depart": "2027-07-25",
-   "return": "2027-07-31",
-   "price": 374.0,
-   "airline": "W6",
-   "flight": "1996",
-   "baseline": 327,
-   "basis": "history",
-   "discount": -0.144,
-   "link": "https://www.aviasales.com/search/TLV2507KRK31071?t=W618165135001816523400000225TLVKRK18170124001817028600000210KRKTLV_4564c273e084c7d0068bc84d4cbf0a62_30045&search_date=24102026&expected_price_uuid=01a16d99-da35-8030-ad83-1dcf052a76a7&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=CrO8_l3qhXGY0BQDA4jJXQ&expected_price_source=share&expected_price_currency=usd&expected_price=374",
-   "destinations": [
-    {
-     "name": "Szczyrk",
-     "country": "Poland",
-     "type": "lift",
-     "transfer": "~1h-1h15 (KTW)",
-     "notes": "Your list"
     }
    ]
   },
@@ -1782,37 +1891,15 @@
   {
    "airport": "BCN",
    "airport_name": "Barcelona",
-   "depart": "2026-12-13",
-   "return": "2026-12-17",
-   "price": 349.0,
+   "depart": "2027-01-04",
+   "return": "2027-01-09",
+   "price": 408.0,
    "airline": "BZ",
    "flight": "252",
-   "baseline": 303,
+   "baseline": 352,
    "basis": "history",
-   "discount": -0.152,
-   "link": "https://www.aviasales.com/search/TLV1312BCN17121?t=BZ17971563001797169500000280TLVBCN17975160001797534600000250BCNTLV_1fcf01fbc51cfe31e8bf1e6f43607f53_28159&search_date=26102026&expected_price_uuid=01a17992-2948-8031-6fa8-30fb4c0cc49c&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=jrDkuxDM62ueEBPznPX7iQ&expected_price_source=share&expected_price_currency=usd&expected_price=348",
-   "destinations": [
-    {
-     "name": "Girona",
-     "country": "Spain",
-     "type": "trail",
-     "transfer": "~1h (GRO), ~1h30 (BCN)",
-     "notes": "Mild winters, shuttle and trail riding"
-    }
-   ]
-  },
-  {
-   "airport": "BCN",
-   "airport_name": "Barcelona",
-   "depart": "2027-04-07",
-   "return": "2027-04-11",
-   "price": 446.0,
-   "airline": "LY",
-   "flight": "391",
-   "baseline": 386,
-   "basis": "history",
-   "discount": -0.155,
-   "link": "https://www.aviasales.com/search/TLV0704BCN11041?t=LY18071199001807133100000280TLVBCN18074040001807422300000245BCNTLV_e96b2c788cfe18cc3cd67d2c34fba530_36051&search_date=26102026&expected_price_uuid=01a179ee-110e-8030-adaa-c3dad0a153ef&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=gidfBo_Vofjp4H_gfDTNcA&expected_price_source=share&expected_price_currency=usd&expected_price=446",
+   "discount": -0.159,
+   "link": "https://www.aviasales.com/search/TLV0401BCN09011?t=BZ17990571001799070300000280TLVBCN17995350001799553600000250BCNTLV_e07d5b89303c92ab817089179d66b20d_32937&search_date=30102026&expected_price_uuid=01a18d70-ed26-8031-23b8-241f74d3f96d&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=78MQhm8F_Mr_rr9L9PSQ3w&expected_price_source=share&expected_price_currency=usd&expected_price=408",
    "destinations": [
     {
      "name": "Girona",
@@ -1826,15 +1913,15 @@
   {
    "airport": "FRA",
    "airport_name": "Frankfurt",
-   "depart": "2027-04-18",
-   "return": "2027-04-25",
-   "price": 474.0,
+   "depart": "2027-05-27",
+   "return": "2027-06-03",
+   "price": 417.0,
    "airline": "DE",
    "flight": "4309",
-   "baseline": 409,
+   "baseline": 358,
    "basis": "history",
-   "discount": -0.159,
-   "link": "https://www.aviasales.com/search/TLV1804FRA25041?t=DE18080286001808041200000270TLVFRA18086637001808683800000275FRATLV_03cbeac8f7bf62a46286cc7dd373bce9_38204&search_date=29102026&expected_price_uuid=01a1876f-9182-8031-2a72-9929d508c7d7&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=4CIZzv4KoLkNYKphbUkGRA&expected_price_source=share&expected_price_currency=usd&expected_price=474",
+   "discount": -0.165,
+   "link": "https://www.aviasales.com/search/TLV2705FRA03061?t=DE18113982001811410800000270TLVFRA18120333001812053400000275FRATLV_3a53ce835b30df13713f3eeb4fa32b3c_33590&search_date=29102026&expected_price_uuid=01a1875d-ebe3-8030-23e4-4824888db36f&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=4CIZzv4KoLkNYKphbUkGRA&expected_price_source=share&expected_price_currency=usd&expected_price=417",
    "destinations": [
     {
      "name": "Winterberg",
@@ -1912,6 +1999,28 @@
    ]
   },
   {
+   "airport": "KRK",
+   "airport_name": "Krakow",
+   "depart": "2027-07-25",
+   "return": "2027-07-31",
+   "price": 374.0,
+   "airline": "W6",
+   "flight": "1996",
+   "baseline": 318,
+   "basis": "history",
+   "discount": -0.178,
+   "link": "https://www.aviasales.com/search/TLV2507KRK31071?t=W618165135001816523400000225TLVKRK18170124001817028600000210KRKTLV_4564c273e084c7d0068bc84d4cbf0a62_30045&search_date=24102026&expected_price_uuid=01a16d99-da35-8030-ad83-1dcf052a76a7&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=CrO8_l3qhXGY0BQDA4jJXQ&expected_price_source=share&expected_price_currency=usd&expected_price=374",
+   "destinations": [
+    {
+     "name": "Szczyrk",
+     "country": "Poland",
+     "type": "lift",
+     "transfer": "~1h-1h15 (KTW)",
+     "notes": "Your list"
+    }
+   ]
+  },
+  {
    "airport": "BCN",
    "airport_name": "Barcelona",
    "depart": "2026-11-09",
@@ -1934,24 +2043,68 @@
    ]
   },
   {
-   "airport": "KRK",
-   "airport_name": "Krakow",
-   "depart": "2027-09-23",
-   "return": "2027-09-30",
-   "price": 296.0,
-   "airline": "LO",
-   "flight": "2112",
-   "baseline": 244,
+   "airport": "FRA",
+   "airport_name": "Frankfurt",
+   "depart": "2027-07-01",
+   "return": "2027-07-11",
+   "price": 642.0,
+   "airline": "DE",
+   "flight": "4309",
+   "baseline": 538,
    "basis": "history",
-   "discount": -0.213,
-   "link": "https://www.aviasales.com/search/TLV2309KRK30091?t=LO18216780001821688200000230TLVKRK18223485001822364700000210KRKTLV_8bf9bdfccc44b24ff274b56a29241b6a_23856&search_date=23102026&expected_price_uuid=01a16899-c994-8031-6110-c680eafaca27&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=qf6nd7VS1HUEfxbEGBFuyA&expected_price_source=share&expected_price_currency=usd&expected_price=296",
+   "discount": -0.193,
+   "link": "https://www.aviasales.com/search/TLV0107FRA11071?t=DE18144222001814434800000270TLVFRA18153165001815336600000275FRATLV_14c7c3f94326c652118174d68d6568ae_52127&search_date=30102026&expected_price_uuid=01a18bb2-0f66-8031-2b69-3fac078f7593&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=zBEtzW4s9ukK7o5ppQqh_g&expected_price_source=share&expected_price_currency=usd&expected_price=642",
    "destinations": [
     {
-     "name": "Szczyrk",
-     "country": "Poland",
+     "name": "Winterberg",
+     "country": "Germany",
      "type": "lift",
-     "transfer": "~1h-1h15 (KTW)",
-     "notes": "Your list"
+     "transfer": "~2h (DTM/DUS)",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "airport": "BCN",
+   "airport_name": "Barcelona",
+   "depart": "2026-12-22",
+   "return": "2026-12-26",
+   "price": 362.0,
+   "airline": "BZ",
+   "flight": "54",
+   "baseline": 303,
+   "basis": "history",
+   "discount": -0.195,
+   "link": "https://www.aviasales.com/search/TLV2212BCN26121?t=BZ17979339001797947100000280TLVBCN17983080001798326900000255BCNTLV_5ca79a72b67393626b8cdd94bc99d0b9_29141&search_date=28102026&expected_price_uuid=01a1815a-83d7-8031-2239-b57772b20a94&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=iccyrQuNT4R4OEGyWTKcVg&expected_price_source=share&expected_price_currency=usd&expected_price=362",
+   "destinations": [
+    {
+     "name": "Girona",
+     "country": "Spain",
+     "type": "trail",
+     "transfer": "~1h (GRO), ~1h30 (BCN)",
+     "notes": "Mild winters, shuttle and trail riding"
+    }
+   ]
+  },
+  {
+   "airport": "FRA",
+   "airport_name": "Frankfurt",
+   "depart": "2027-05-27",
+   "return": "2027-06-04",
+   "price": 442.0,
+   "airline": "DE",
+   "flight": "4309",
+   "baseline": 358,
+   "basis": "history",
+   "discount": -0.235,
+   "link": "https://www.aviasales.com/search/TLV2705FRA04061?t=DE18113982001811410800000270TLVFRA18121197001812139800000275FRATLV_a9c8181957e338ff26a8f7d7c9a76ca0_35584&search_date=29102026&expected_price_uuid=01a187db-50d6-8030-6fd1-f0dfad169b80&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=1i_fSj1KzhDmgiG_t4F0xA&expected_price_source=share&expected_price_currency=usd&expected_price=442",
+   "destinations": [
+    {
+     "name": "Winterberg",
+     "country": "Germany",
+     "type": "lift",
+     "transfer": "~2h (DTM/DUS)",
+     "notes": ""
     }
    ]
   },
@@ -1963,9 +2116,9 @@
    "price": 398.0,
    "airline": "W6",
    "flight": "1996",
-   "baseline": 327,
+   "baseline": 318,
    "basis": "history",
-   "discount": -0.217,
+   "discount": -0.254,
    "link": "https://www.aviasales.com/search/TLV2207KRK28071?t=W618162543001816264200000225TLVKRK18167532001816769400000210KRKTLV_5e6adb580b359702d4a2d0be485eb4c9_31973&search_date=24102026&expected_price_uuid=01a16d9c-25dc-8030-6ef2-1995c1b14237&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=CrO8_l3qhXGY0BQDA4jJXQ&expected_price_source=share&expected_price_currency=usd&expected_price=398",
    "destinations": [
     {
@@ -1980,15 +2133,15 @@
   {
    "airport": "FRA",
    "airport_name": "Frankfurt",
-   "depart": "2027-05-27",
-   "return": "2027-06-03",
-   "price": 417.0,
+   "depart": "2027-04-13",
+   "return": "2027-04-17",
+   "price": 525.0,
    "airline": "DE",
    "flight": "4309",
-   "baseline": 342,
+   "baseline": 417,
    "basis": "history",
-   "discount": -0.218,
-   "link": "https://www.aviasales.com/search/TLV2705FRA03061?t=DE18113982001811410800000270TLVFRA18120333001812053400000275FRATLV_3a53ce835b30df13713f3eeb4fa32b3c_33590&search_date=29102026&expected_price_uuid=01a1875d-ebe3-8030-23e4-4824888db36f&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=4CIZzv4KoLkNYKphbUkGRA&expected_price_source=share&expected_price_currency=usd&expected_price=417",
+   "discount": -0.259,
+   "link": "https://www.aviasales.com/search/TLV1304FRA17041?t=DE18075966001807609200000270TLVFRA18079725001807992600000275FRATLV_dc41eb9a1742435a92966ccce90c4a6a_42405&search_date=30102026&expected_price_uuid=01a18d97-c313-8030-a267-cf472ac35c11&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=0U171YSsQbmwBZio_l2W1Q&expected_price_source=share&expected_price_currency=usd&expected_price=525",
    "destinations": [
     {
      "name": "Winterberg",
@@ -2022,46 +2175,24 @@
    ]
   },
   {
-   "airport": "FRA",
-   "airport_name": "Frankfurt",
-   "depart": "2027-05-27",
-   "return": "2027-06-04",
-   "price": 442.0,
-   "airline": "DE",
-   "flight": "4309",
-   "baseline": 342,
-   "basis": "history",
-   "discount": -0.291,
-   "link": "https://www.aviasales.com/search/TLV2705FRA04061?t=DE18113982001811410800000270TLVFRA18121197001812139800000275FRATLV_a9c8181957e338ff26a8f7d7c9a76ca0_35584&search_date=29102026&expected_price_uuid=01a187db-50d6-8030-6fd1-f0dfad169b80&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=1i_fSj1KzhDmgiG_t4F0xA&expected_price_source=share&expected_price_currency=usd&expected_price=442",
-   "destinations": [
-    {
-     "name": "Winterberg",
-     "country": "Germany",
-     "type": "lift",
-     "transfer": "~2h (DTM/DUS)",
-     "notes": ""
-    }
-   ]
-  },
-  {
-   "airport": "ZRH",
-   "airport_name": "Zurich",
-   "depart": "2027-06-27",
-   "return": "2027-07-04",
-   "price": 454.0,
-   "airline": "LY",
-   "flight": "343",
-   "baseline": 351,
+   "airport": "VIE",
+   "airport_name": "Vienna",
+   "depart": "2027-05-07",
+   "return": "2027-05-11",
+   "price": 402.0,
+   "airline": "OS",
+   "flight": "0080",
+   "baseline": 311,
    "basis": "history",
    "discount": -0.293,
-   "link": "https://www.aviasales.com/search/TLV2706ZRH04071?t=LY18141141001814126100000260TLVZRH18147042001814721900000235ZRHTLV_adf1696a6e9e491b1c7be3f23f3d4579_36644&search_date=23102026&expected_price_uuid=01a16964-8b4a-8030-ad5b-b69c9f6a5b12&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=hb1N1sfk3fJk9lWmctztWg&expected_price_source=share&expected_price_currency=usd&expected_price=454",
+   "link": "https://www.aviasales.com/search/TLV0705VIE11051?t=OS18097038001809713700000225TLVVIE18100302001810046100000205VIETLV_4287c8d2d8cb29ea67b421cd23873380_32432&search_date=30102026&expected_price_uuid=01a18cf9-97d5-8030-a724-d9311d9e10d1&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=r6LhE-JaL25-tYr56heTYQ&expected_price_source=share&expected_price_currency=usd&expected_price=402",
    "destinations": [
     {
-     "name": "Lenzerheide",
-     "country": "Switzerland",
+     "name": "Kalnica Bike Park",
+     "country": "Slovakia",
      "type": "lift",
-     "transfer": "~2h",
-     "notes": "World Cup venue"
+     "transfer": "verify (~1h45-2h)",
+     "notes": "Your list, check transfer from airport"
     }
    ]
   },
@@ -2088,23 +2219,23 @@
    ]
   },
   {
-   "airport": "VCE",
-   "airport_name": "Venice",
-   "depart": "2027-07-01",
-   "return": "2027-07-15",
-   "price": 545.0,
-   "airline": "LY",
-   "flight": "289",
-   "baseline": 416,
+   "airport": "FRA",
+   "airport_name": "Frankfurt",
+   "depart": "2027-04-21",
+   "return": "2027-05-02",
+   "price": 552.0,
+   "airline": "LH",
+   "flight": "687",
+   "baseline": 417,
    "basis": "history",
-   "discount": -0.31,
-   "link": "https://www.aviasales.com/search/TLV0107VCE15071?t=LY18144648001814475000000230TLVVCE18156891001815704700000200VCETLV_ebd5cf5802696e9e3f23b375e1ffbf78_43944&search_date=23102026&expected_price_uuid=01a1697b-46e2-8030-af13-9edc630f3952&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=00p14PT3etnjN5DpT9E1MQ&expected_price_source=share&expected_price_currency=usd&expected_price=545",
+   "discount": -0.324,
+   "link": "https://www.aviasales.com/search/TLV2104FRA02051?t=LH18083250001808338200000280TLVFRA18092808001809299700000255FRATLV_14619d2b18e7fdabc3f94e391c9fb328_44253&search_date=25102026&expected_price_uuid=01a1752a-03e6-8030-6237-f78433d644d9&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=gsAcBd9ckgoUsd0zVhlT_w&expected_price_source=share&expected_price_currency=usd&expected_price=552",
    "destinations": [
     {
-     "name": "Kronplatz (Plan de Corones)",
-     "country": "Italy",
+     "name": "Winterberg",
+     "country": "Germany",
      "type": "lift",
-     "transfer": "~2h15 (INN)",
+     "transfer": "~2h (DTM/DUS)",
      "notes": ""
     }
    ]
@@ -2132,39 +2263,17 @@
    ]
   },
   {
-   "airport": "FRA",
-   "airport_name": "Frankfurt",
-   "depart": "2027-04-21",
-   "return": "2027-05-02",
-   "price": 602.0,
-   "airline": "LH",
-   "flight": "687",
-   "baseline": 409,
-   "basis": "history",
-   "discount": -0.472,
-   "link": "https://www.aviasales.com/search/TLV2104FRA02051?t=LH18083250001808338200000280TLVFRA18092808001809299700000255FRATLV_14619d2b18e7fdabc3f94e391c9fb328_48575&search_date=23102026&expected_price_uuid=01a16a8a-4f6b-8031-264b-dd2793128552&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=gsAcBd9ckgoUsd0zVhlT_w&expected_price_source=share&expected_price_currency=usd&expected_price=602",
-   "destinations": [
-    {
-     "name": "Winterberg",
-     "country": "Germany",
-     "type": "lift",
-     "transfer": "~2h (DTM/DUS)",
-     "notes": ""
-    }
-   ]
-  },
-  {
    "airport": "VCE",
    "airport_name": "Venice",
    "depart": "2027-07-04",
    "return": "2027-07-18",
-   "price": 648.0,
+   "price": 621.0,
    "airline": "LY",
    "flight": "289",
    "baseline": 416,
    "basis": "history",
-   "discount": -0.558,
-   "link": "https://www.aviasales.com/search/TLV0407VCE18071?t=LY18147240001814734200000230TLVVCE18159483001815963900000200VCETLV_a2214c7e26fa09d371b22eb992bb497d_52225&search_date=23102026&expected_price_uuid=01a1697c-4a85-8031-6274-8d80a28af072&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=00p14PT3etnjN5DpT9E1MQ&expected_price_source=share&expected_price_currency=usd&expected_price=648",
+   "discount": -0.493,
+   "link": "https://www.aviasales.com/search/TLV0407VCE18071?t=LY18147240001814734200000230TLVVCE18159483001815963900000200VCETLV_a2214c7e26fa09d371b22eb992bb497d_49921&search_date=24102026&expected_price_uuid=01a16f08-9ada-8030-2430-e0e5059a3dc0&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=00p14PT3etnjN5DpT9E1MQ&expected_price_source=share&expected_price_currency=usd&expected_price=621",
    "destinations": [
     {
      "name": "Kronplatz (Plan de Corones)",
@@ -2183,9 +2292,9 @@
    "price": 640.0,
    "airline": "LH",
    "flight": "687",
-   "baseline": 409,
+   "baseline": 417,
    "basis": "history",
-   "discount": -0.565,
+   "discount": -0.535,
    "link": "https://www.aviasales.com/search/TLV2004FRA02051?t=LH18082386001808251800000280TLVFRA18092808001809299700000255FRATLV_9d20ce999a8378ce853262d91f591cc8_51393&search_date=24102026&expected_price_uuid=01a16f3a-5e0a-8031-2fc0-d524329ec2fd&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=4zQjQRJcpX6iub15TIpMpQ&expected_price_source=share&expected_price_currency=usd&expected_price=640",
    "destinations": [
     {
@@ -2205,9 +2314,9 @@
    "price": 516.0,
    "airline": "LY",
    "flight": "5419",
-   "baseline": 327,
+   "baseline": 318,
    "basis": "history",
-   "discount": -0.578,
+   "discount": -0.625,
    "link": "https://www.aviasales.com/search/TLV2307KRK29071?t=LY18163224001816332600000230TLVKRK18168396001816855800000210KRKTLV_d0de4226fc65bd7d2a38c7068c830ba0_41715&search_date=29102026&expected_price_uuid=01a186ea-8e84-8031-6840-091d1aafc6d5&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=Z90dpRSYM9G1PeKoq0n1mg&expected_price_source=share&expected_price_currency=usd&expected_price=516",
    "destinations": [
     {
@@ -2222,15 +2331,15 @@
   {
    "airport": "VIE",
    "airport_name": "Vienna",
-   "depart": "2027-04-11",
-   "return": "2027-04-18",
-   "price": 489.0,
-   "airline": "LY",
-   "flight": "363",
+   "depart": "2027-04-13",
+   "return": "2027-04-17",
+   "price": 542.0,
+   "airline": "OS",
+   "flight": "0080",
    "baseline": 300,
    "basis": "history",
-   "discount": -0.63,
-   "link": "https://www.aviasales.com/search/TLV1104VIE18041?t=LY18074646001807474200000220TLVVIE18080445001808060100000200VIETLV_07712360fc7c0a22e910a5d8310977a9_39475&search_date=23102026&expected_price_uuid=01a169e6-7e98-8031-2828-75e3014b5a45&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=3-6Si9nralde_RmwLhZAWw&expected_price_source=share&expected_price_currency=usd&expected_price=489",
+   "discount": -0.807,
+   "link": "https://www.aviasales.com/search/TLV1304VIE17041?t=OS18076302001807640100000225TLVVIE18079566001807972500000205VIETLV_0299276bd3a4ef2925568d7eab40b475_43773&search_date=30102026&expected_price_uuid=01a18d99-c4ef-8030-2968-7a60c430dd73&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=r6LhE-JaL25-tYr56heTYQ&expected_price_source=share&expected_price_currency=usd&expected_price=542",
    "destinations": [
     {
      "name": "Kalnica Bike Park",
@@ -2246,13 +2355,13 @@
    "airport_name": "Vienna",
    "depart": "2027-04-16",
    "return": "2027-04-19",
-   "price": 566.0,
+   "price": 565.0,
    "airline": "OS",
    "flight": "80",
    "baseline": 300,
    "basis": "history",
-   "discount": -0.887,
-   "link": "https://www.aviasales.com/search/TLV1604VIE19041?t=OS18078894001807899300000225TLVVIE18081660001808181900000205VIETLV_a43ce86cc7ff5fdac9970b7213cafab3_45772&search_date=29102026&expected_price_uuid=01a186e5-36a2-8030-6cc0-866b3da32787&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=FCoh7umwtaTEEkHyUOL30g&expected_price_source=share&expected_price_currency=usd&expected_price=566",
+   "discount": -0.883,
+   "link": "https://www.aviasales.com/search/TLV1604VIE19041?t=OS18078894001807899300000225TLVVIE18081660001808181900000205VIETLV_a43ce86cc7ff5fdac9970b7213cafab3_45865&search_date=30102026&expected_price_uuid=01a18bb5-74ad-8031-29f5-643b4f4da040&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=FCoh7umwtaTEEkHyUOL30g&expected_price_source=share&expected_price_currency=usd&expected_price=565",
    "destinations": [
     {
      "name": "Kalnica Bike Park",
@@ -2334,13 +2443,13 @@
    "airport_name": "Krakow",
    "depart": "2027-06-08",
    "return": "2027-06-11",
-   "price": 259.0,
+   "price": 255.0,
    "airline": "W6",
    "flight": "1996",
-   "baseline": null,
-   "basis": "none",
-   "discount": null,
-   "link": "https://www.aviasales.com/search/TLV0806KRK11061?t=W618124527001812462600000225TLVKRK18126924001812708600000210KRKTLV_2a9a086fc32570d2d53291b45d6b2576_20850&search_date=29102026&expected_price_uuid=01a1867d-2b85-8031-6852-1bd8c24a7ecd&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=dVgEt_PT0tdnbxtFGsXfnQ&expected_price_source=share&expected_price_currency=usd&expected_price=259",
+   "baseline": 255,
+   "basis": "history",
+   "discount": 0.0,
+   "link": "https://www.aviasales.com/search/TLV0806KRK11061?t=W618124527001812462600000225TLVKRK18126924001812708600000210KRKTLV_2a9a086fc32570d2d53291b45d6b2576_20559&search_date=30102026&expected_price_uuid=01a18c59-4c22-8031-6ef9-9dd6b6fd4809&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=dVgEt_PT0tdnbxtFGsXfnQ&expected_price_source=share&expected_price_currency=usd&expected_price=255",
    "destinations": [
     {
      "name": "Szczyrk",
@@ -2396,6 +2505,28 @@
    ]
   },
   {
+   "airport": "FRA",
+   "airport_name": "Frankfurt",
+   "depart": "2027-05-20",
+   "return": "2027-05-27",
+   "price": 358.0,
+   "airline": "DE",
+   "flight": "4309",
+   "baseline": 358,
+   "basis": "history",
+   "discount": 0.0,
+   "link": "https://www.aviasales.com/search/TLV2005FRA27051?t=DE18107934001810806000000270TLVFRA18114285001811448600000275FRATLV_adaebb20463ef8db4ba2914f4d2f59c0_28797&search_date=29102026&expected_price_uuid=01a186ba-9be2-8030-a430-a77bd9d84f41&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=4CIZzv4KoLkNYKphbUkGRA&expected_price_source=share&expected_price_currency=usd&expected_price=358",
+   "destinations": [
+    {
+     "name": "Winterberg",
+     "country": "Germany",
+     "type": "lift",
+     "transfer": "~2h (DTM/DUS)",
+     "notes": ""
+    }
+   ]
+  },
+  {
    "airport": "BTS",
    "airport_name": "Bratislava",
    "depart": "2027-07-22",
@@ -2418,68 +2549,24 @@
    ]
   },
   {
-   "airport": "MUC",
-   "airport_name": "Munich",
-   "depart": "2027-09-14",
-   "return": "2027-09-21",
-   "price": 432.0,
-   "airline": "LY",
-   "flight": "353",
-   "baseline": 432,
+   "airport": "FRA",
+   "airport_name": "Frankfurt",
+   "depart": "2027-06-05",
+   "return": "2027-06-19",
+   "price": 427.0,
+   "airline": "DE",
+   "flight": "4309",
+   "baseline": 427,
    "basis": "history",
    "discount": 0.0,
-   "link": "https://www.aviasales.com/search/TLV1409MUC21091?t=LY18209016001820912700000245TLVMUC18215220001821539100000225MUCTLV_23875f5798c3b6650d04abcc2ea2d018_34848&search_date=26102026&expected_price_uuid=01a177ac-a49c-8031-6423-91726fe7f78d&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=77jSTUYOiD_aLuYRWqZDnA&expected_price_source=share&expected_price_currency=usd&expected_price=432",
+   "link": "https://www.aviasales.com/search/TLV0506FRA19061?t=DE18121758001812188400000270TLVFRA18134157001813435800000275FRATLV_da4b3adf49a44c7154d723d2cbd5a560_34689&search_date=30102026&expected_price_uuid=01a18b8e-2a6a-8030-6144-2a0b4f35fb6b&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=qrVmo8ytkTb1Z5BehmoFKQ&expected_price_source=share&expected_price_currency=usd&expected_price=427",
    "destinations": [
     {
-     "name": "Leogang - Saalbach-Hinterglemm",
-     "country": "Austria",
+     "name": "Winterberg",
+     "country": "Germany",
      "type": "lift",
-     "transfer": "~1h (SZG), ~2h (MUC)",
-     "notes": "Top-tier park, Leogang and Saalbach on one area"
-    }
-   ]
-  },
-  {
-   "airport": "MUC",
-   "airport_name": "Munich",
-   "depart": "2027-09-15",
-   "return": "2027-09-22",
-   "price": 432.0,
-   "airline": "LY",
-   "flight": "351",
-   "baseline": 432,
-   "basis": "history",
-   "discount": 0.0,
-   "link": "https://www.aviasales.com/search/TLV1509MUC22091?t=LY18210231001821034200000245TLVMUC18216084001821625500000225MUCTLV_249be7f7f352d651102da67332b7932b_34848&search_date=26102026&expected_price_uuid=01a177af-681d-8030-60ef-8a4f6a4ee734&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=IrGc8Jm_05_txePRENluLA&expected_price_source=share&expected_price_currency=usd&expected_price=432",
-   "destinations": [
-    {
-     "name": "Leogang - Saalbach-Hinterglemm",
-     "country": "Austria",
-     "type": "lift",
-     "transfer": "~1h (SZG), ~2h (MUC)",
-     "notes": "Top-tier park, Leogang and Saalbach on one area"
-    }
-   ]
-  },
-  {
-   "airport": "MUC",
-   "airport_name": "Munich",
-   "depart": "2027-09-16",
-   "return": "2027-09-23",
-   "price": 432.0,
-   "airline": "LY",
-   "flight": "353",
-   "baseline": 432,
-   "basis": "history",
-   "discount": 0.0,
-   "link": "https://www.aviasales.com/search/TLV1609MUC23091?t=LY18210744001821085500000245TLVMUC18216948001821711900000225MUCTLV_effe6f50d1b856039bb1ac86714aa525_34848&search_date=26102026&expected_price_uuid=01a177ae-3a5b-8030-6fae-6425d9ebe941&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=77jSTUYOiD_aLuYRWqZDnA&expected_price_source=share&expected_price_currency=usd&expected_price=432",
-   "destinations": [
-    {
-     "name": "Leogang - Saalbach-Hinterglemm",
-     "country": "Austria",
-     "type": "lift",
-     "transfer": "~1h (SZG), ~2h (MUC)",
-     "notes": "Top-tier park, Leogang and Saalbach on one area"
+     "transfer": "~2h (DTM/DUS)",
+     "notes": ""
     }
    ]
   },
